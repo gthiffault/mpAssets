@@ -1,0 +1,30 @@
+.c-files_wrap {
+	padding: 88px 104px;
+	background: $colorSix;
+	@include mixingBottom();
+}
+
+.c-files_ul {
+	margin-bottom: 0;
+	li {
+		line-height: 40px;
+		a[href$=".pdf"] {
+			position: relative;
+			padding-left: 80px;
+			color: $colorFour;
+			&:before {
+				position: absolute;
+				content: "";
+				left: 0;
+				width: 25px;
+				height: 31px;
+				background: url(../images/icons/items-visuels.svg) -37px -42px;
+				top: -5px;
+			}
+			&:hover:before {
+				background: url(../images/icons/items-visuels.svg) -37px -102px;
+			}
+		}		
+	}
+}
+

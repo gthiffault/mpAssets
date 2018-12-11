@@ -1,0 +1,27 @@
+.c-team_content {
+	@include mixingBottom();
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+.c-team_ul li {
+	@include mixingBottom();
+	.c-team_role {
+		font-size: 20px;
+		margin-bottom: 0;
+		color: $colorNine;
+	}
+
+	.c-team_pipe {
+		color: $colorZero;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+
+
+

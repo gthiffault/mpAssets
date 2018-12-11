@@ -1,0 +1,29 @@
+.c-pagination_ul  {
+display: block;
+text-align: center;
+li{
+	position: relative;
+	display: inline-block;
+	&:before {
+		position: absolute;
+		content: '';
+		background: #c1c1c1;
+		width: 1px;height: 24px;
+		left: -2px;
+	}
+	.c-pagination {
+		font-size: 16px;
+		font-weight: 700;
+		padding: 0 10px;
+		color: $colorFour;
+	}
+	.current {
+		color: $colorFive;
+	}
+}
+}
+.c-pagination_ul li:first-child {
+	&:before {
+		display: none;
+	}
+}	

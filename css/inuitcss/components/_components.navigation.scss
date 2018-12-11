@@ -1,0 +1,156 @@
+
+//Value
+
+	$menu-secondary-dektop: 16px;
+	$menu-main-dektop: 18px; 
+	$header-logo-width: 304px;
+
+// Mixins
+
+	@mixin font-menu-secondary() {
+		@media (min-width:20em) { 
+			font-size: $menu-secondary-dektop;
+		}
+	}
+	@mixin font-menu-main() {
+		line-height: 27px;
+		line-height: 1.227em;		
+		letter-spacing: 0.4px;
+		letter-spacing: 0.018em;
+		@media (min-width:20em) { 
+			font-size: $menu-main-dektop;
+		}
+	}
+
+	$menu-secondary-li-spacing-dektop: 56px;
+	$menu-main-li-spacing-dektop: 64px; 
+
+	@mixin li-spacing-menu-secondary() {
+		@media (min-width:20em) { 
+			margin-right: $menu-secondary-li-spacing-dektop;
+		}
+	}	
+
+	@mixin li-spacing-menu-main() {
+		@media (min-width:20em) { 
+			margin-right: $menu-main-li-spacing-dektop;
+		}
+	}	
+	@mixin header-logo-width() {
+		@media (min-width:20em) { 
+			max-width: $header-logo-width;
+		}
+	}						
+
+/* ==========================================================================
+   #HEADER
+========================================================================== */
+
+	/* ======================================================================
+   		#HEADER // SECONDARY MENU
+	====================================================================== */
+
+		.c-header_nav_secondary {
+			background: $colorEight;
+			padding: 16px;
+			text-align: right;
+		}
+
+		.c-header_nav_secondary_ul {
+			margin-bottom: -4px;
+			width: auto;
+			li {
+				display: inline-block;
+				@include li-spacing-menu-secondary();
+				a, {
+					@include font-menu-secondary();
+
+				}
+				a:hover,
+				&.c-current-page a,
+				&.c-parent_li p:hover {
+					color: $colorZero;
+					cursor: pointer;
+				}				
+			}
+		}
+
+	/* ======================================================================
+   		#HEADER // MAIN MENU
+	====================================================================== */
+
+		.c-flex {
+		    display: flex;
+		    transition: all 0.15s linear;
+			.c-flex_item {
+			    flex: 0 auto;
+			    display: flex;
+			    align-items: center;
+			} 
+			.c-flex_item.-logo {
+				margin-right: auto;
+			}			
+		}	
+
+		.c-header_nav_main_logo {
+			@include header-logo-width();
+			margin:16px 0;
+		}
+
+		.c-header_nav_main_ul {
+			margin-bottom: 0;
+			li {
+				display: inline-block;
+				@include li-spacing-menu-main();
+				.c-submenu {
+					display: none;	
+				    position: absolute;
+				    width: 369px;
+				    margin-left: 0;
+				    z-index: 1;
+				    background: #FFF;
+				    top: 61px;
+				    padding: 20px;
+				    li {
+				    	line-height: 48px;
+				    	margin-right: 0;
+				    }
+				}
+				a,
+				.c-parent {
+					@include font-menu-main();
+					text-transform: uppercase;
+				}
+				a:hover,
+				&.c-current-page a,
+				&.c-parent_li p:hover {
+					color: $colorZero;
+					cursor: pointer;
+				}
+				&.c-parent_li {
+					position: relative;
+				}
+			}
+
+		}
+
+	/* ======================================================================
+   		#HEADER // MENU CROSSOVER
+	====================================================================== */
+
+		.c-header_nav_secondary_ul,
+		.c-header_nav_main_ul {
+			li {
+				&:last-child {
+					margin-right:0;
+				}
+				a,
+				.c-parent {
+					font-family: $fontOne;
+					text-decoration: none;	
+					color: $colorFour;	
+					margin-bottom: 0;	
+					font-weight: 400;		
+				}					
+			}
+		}			

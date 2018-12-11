@@ -1,0 +1,90 @@
+.c-accordion {
+	@include mixingBottom();
+	.c-content,
+	.c-custom-bullet-list {
+		margin-bottom: 56px;
+	}
+	h3 {
+		color: $colorFour;
+		text-transform: uppercase;
+		border-top: 1px solid $colorTen;
+		margin: 6px 0;
+		padding: 14px 0;
+		padding-left: 24px;
+	}
+	h3:hover {
+		cursor: pointer;
+	}
+	.c-accordion_main-ul {
+		list-style-type: none;
+		margin-left: 0;
+	}
+}
+
+.c-custom-bullet-list ul {
+	list-style-type: none;
+	margin-left: 0;
+	li {
+		position: relative;
+	}
+ 	li:first-letter { 
+    	font-size: 26px;
+    	line-height: 36px;
+    	letter-spacing: 0.6px;
+    	display: block;
+    	color: $colorZero;
+	}
+}
+
+.c-accordion_hide {
+	display: none;
+	padding-top: 40px;
+	padding-left: 48px;
+}
+
+
+.c-accordion_clickable {
+	position: relative;
+}
+
+
+.c-accordion_status {
+	position:relative;
+	width:28px; height:28px;
+	position: absolute;
+	right: 24px;
+    top: calc(50% - 1px);
+	&:before,
+	&:after {
+ 		-webkit-transition: all 0.3s ease; 
+ 		-moz-transition: all 0.3s ease; 
+ 		-ms-transition: all 0.3s ease; 
+ 		-o-transition: all 0.3s ease; 
+  		transition: all 0.3s ease;  
+	}
+	&:before {
+		content:"";
+		position:absolute;
+		width:28px;
+		height:4px;
+		background: $colorFive;
+		display:inline-block;
+	}
+	&:after {
+	    content: "";
+	    position: absolute;
+	    margin-top: -12px;
+	    margin-left: 12px;
+	    width: 4px;
+	    height: 28px;
+	    background: $colorFive;
+	    display: inline-block;
+	}
+
+}
+
+.-js-accordion-active .c-accordion_status:after{
+	margin-top:0px;
+	width:4px;
+	height:4px;
+}

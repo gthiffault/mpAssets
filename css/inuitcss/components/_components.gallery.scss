@@ -1,0 +1,33 @@
+.c-gallery {
+	@include mixingBottom();
+	h2 {
+		color: #FFF;
+		padding-bottom: 380px;
+		&:after {
+			color:$colorSeven;
+			z-index: 1;
+		}
+	}
+	.c-gallery_div {
+		width: 100%;
+		padding-top: 122px;
+		max-width: 1342px;
+		background: $colorZero;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			width: 50vw;
+			height: 100%;
+			margin-left: -50vw;
+			background: $colorZero;
+		}
+	}
+}
+
+.c-gallery_item {
+	img {
+		width: 100%;
+	}
+}

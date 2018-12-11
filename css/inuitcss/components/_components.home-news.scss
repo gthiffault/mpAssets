@@ -1,0 +1,103 @@
+	.c-activities {
+		@include mixingBottom();
+		.c-activities_ul {
+			margin-bottom: 96px;
+			li:nth-child(2n + 0) {
+				margin-top: 128px;
+			}
+			li {
+				margin-bottom: 112px;
+				figure {
+					box-shadow: 4px 4px 7px 0px rgba(190,190,190,0.5);				
+					.c-activities_image {
+						position: relative;
+						&:before {
+							position: absolute;
+							content: '';
+							height: 22px;
+							width: 76%;
+							background: $colorZero;
+							bottom: 0;
+						}
+					}
+				}
+				figcaption {
+					padding: 48px 32px;
+					position: relative;
+					.c-activities_link_box {
+						position: absolute;
+						width: 105px;
+						height: 72px;
+						bottom: -34px;
+						right: -18px;
+						background: url(../images/icons/items-visuels.svg) -57px -130px $colorZero;
+						&:hover {
+							background: url(../images/icons/items-visuels.svg) -57px -130px $colorFour;
+						}
+					}
+					.c-activities_link {
+						display: block;
+						height: 100%;
+					}
+				}			
+			}
+			li:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.c-activities_info {
+		color: $colorThree;
+		line-height: 22px;
+		letter-spacing: 0.36px;
+	}
+
+	.c-activities_title {
+		font-size: 28px;
+		line-height: 36px;
+		line-height: 1.125em;
+		letter-spacing: 0.58px;
+		letter-spacing: 0.018em;
+		text-decoration: none;
+		color: $colorFour;
+		font-weight: 400;
+	}
+
+.c-activities_filter {
+	text-align: right;
+}
+
+.c-activities_filter_select {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    border-bottom: 2px solid $colorFive;
+    width: 280px;
+    font-size: 18px;
+    border-radius: 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.c-activities_filter_select select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.c-activities_filter_select select:focus {
+    outline: none;
+}	
+
+.c-filter_title {
+	text-transform: uppercase;
+}

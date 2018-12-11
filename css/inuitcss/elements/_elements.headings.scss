@@ -1,0 +1,122 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+// We have all of our heading font sizes defined here. Passing these pixel
+// values into our `inuit-font-size()` mixin will generate a rem-based
+// `font-size` with a pixel fallback, as well as generating a `line-height` that
+// will sit on our baseline grid.
+
+$inuit-font-size-h1:  36px !default;
+$inuit-font-size-h2:  28px !default;
+$inuit-font-size-h3:  24px !default;
+$inuit-font-size-h4:  20px !default;
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  16px !default;
+
+$banner-title-dektop: 48px; 
+@mixin banner-title-size() {
+	@media (min-width:20em) { 
+		font-size: $banner-title-dektop;
+	}
+}	
+
+
+h1,
+.c-section_title {
+	font-family: $fontOne;
+	@include banner-title-size();
+	line-height: 90px;
+	line-height: 1.406em;
+	letter-spacing: 1.57px;
+	letter-spacing: 0.025em;
+	color: $colorSeven;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-bottom: 0;
+	padding-top: 0;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: "";
+		height: 4px;
+		width: 112px;
+		background: $colorZero;
+		left: 0;
+		bottom: -40px;
+	}	
+}
+
+h2,
+h1.c-page_title {
+	font-size: 36px;
+	line-height: 49px;
+	line-height: 1.114em;
+	letter-spacing: 1.91px;
+	letter-spacing: 0.043em;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 80px;
+	margin-bottom: 1.818em;
+	color: $colorFour;
+	position: relative;
+	padding-top: 0.591em;
+	text-shadow: none;
+}
+
+.c-color-two {
+	color: $colorZero;
+}
+
+    h2.c-data::after,
+    h1.c-page_title::after {
+		content: attr(data-title);
+	    position: absolute;
+	    left: -0.591em;;
+	    top: 0;
+	    color: #999999;
+	    z-index: -1;
+	    opacity: 0.12;
+	    font-size: 46px;
+    }
+
+h3 {
+	font-size: 30px;
+	line-height: 49px;
+	letter-spacing: 1.91px;
+	color: $colorZero;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h4 {
+font-size: 26px;
+line-height: 49px;
+letter-spacing: 1.57px;
+font-weight: 400;
+	color: $colorFour;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 34px;
+	line-height: 59px;
+	letter-spacing: 1.91px;
+	color: $colorFive;
+	font-weight: 400;
+	text-transform: none;
+}
+
+h6 {
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.48px;
+font-weight: 400;
+text-transform: uppercase;
+}

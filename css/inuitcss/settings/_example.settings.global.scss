@@ -1,0 +1,93 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+
+
+// Standardise some UI treatments.
+
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+
+/* ========================================================================
+	COLOR
+======================================================================== */
+
+	$colorZero 	: #00ADBB;
+	$colorOne	: #00848F;
+	$colorThree	: #999999;
+	$colorFour	: #5D5D61;
+	$colorFive 	: #CF633C;
+	$colorSix	: #E6E6E6;
+	$colorSeven	: #FFFFFF;
+	$colorEight	: #F2F2F2;	
+	$colorNine	: #000;
+	$colorTen	: #434343;
+
+/* ========================================================================
+	SPACING
+======================================================================== */
+
+$spacing-bottom-zero: 	128px;
+$spacing-top-zero: 		-128px;
+
+
+/* ========================================================================
+	FONT
+======================================================================== */
+	
+	$fontZero 	: 'Open Sans', sans-serif;
+	$fontOne	: 'Montserrat', sans-serif;
+
+/* ========================================================================
+	SIZE
+======================================================================== */
+	
+/* ========================================================================
+	MIXING
+======================================================================== */
+
+
+	@mixin mixingBottom() {
+		@media (min-width:20em) { 
+			margin-bottom: $spacing-bottom-zero
+		}
+	}	
+
+	@mixin mixingTopActivities() {
+		@media (min-width:20em) { 
+			margin-top: $spacing-top-zero;
+		}
+	}		
+
+	@mixin ultype() {
+		ul {
+			list-style-type: none;
+			position: relative;
+			margin-left: 0;
+			margin-bottom: 56px;
+			&:before {
+				position: absolute;
+				content: '';
+				width: 3px;
+				height: 100%;
+				left: 0;
+				top: 0;
+				background: $colorZero;
+			}
+			li {
+				padding-left: 40px;
+				line-height: 32px;
+			}
+		}
+	}		
+
+
+
+	.c-mg {
+		@include mixingBottom();
+	}

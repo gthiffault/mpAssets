@@ -1,0 +1,100 @@
+
+	$banner-home-dektop: 689px;
+	@mixin banner-home-height() {
+		@media (min-width:20em) { 
+			height: $banner-home-dektop;
+		}
+	}
+
+	$banner-page-desktop: 430px;
+	@mixin banner-page-height() {
+		@media (min-width:20em) { 
+			height: $banner-page-desktop;
+		}
+	}	
+
+	$banner-title-dektop: 56px; 
+	@mixin banner-title-size() {
+		@media (min-width:20em) { 
+			font-size: $banner-title-dektop;
+		}
+	}	
+
+	$banner-subtitle-dektop: 28px; 
+	@mixin banner-subtitle-size() {
+		@media (min-width:20em) { 
+			font-size: $banner-subtitle-dektop;
+		}
+	}	
+
+	$banner-home-subtitle-padding-desktop: 96px; 
+	$banner-home-subtitle-padding-margin-desktop: 176px; 
+	@mixin banner-subtitle-spacing() {
+		@media (min-width:20em) { 
+			padding-left: $banner-home-subtitle-padding-desktop;
+			margin-left:$banner-home-subtitle-padding-margin-desktop;
+		}
+	}		
+
+/* ==========================================================================
+   #BANNER
+========================================================================== */
+
+	.c-header_banner_home {
+		@include banner-home-height();
+		position: relative;
+		padding: 56px;
+		background-position: center center !important;
+		.c-header_banner_subtitle {
+			@include banner-subtitle-spacing();
+			position: relative;
+			&:before {
+				position: absolute;
+				content: '';
+				width: 72px;
+				height: 3px;
+				background: $colorZero;
+				left: 0;
+				top: 50%;
+				margin-top: -1.5px;
+			}
+		}
+	}
+
+	.c-header_banner_page {
+		@include banner-page-height();
+		position: relative;
+		padding: 56px;
+		background-position: center center !important;
+	}
+
+	.c-header_banner_content {
+		position: relative;
+		width: 100%;
+		position: absolute;
+		bottom: 96px;
+	}
+	.c-header_banner_title {
+		font-family: $fontOne;
+		@include banner-title-size();
+		line-height: 90px;
+		line-height: 1.406em;
+		letter-spacing: 1.57px;
+		letter-spacing: 0.025em;
+		color: $colorSeven;
+		text-transform: uppercase;
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+		font-weight: 400;
+	}
+
+	.c-header_banner_subtitle {
+		@include banner-subtitle-size();
+		font-family: $fontOne;
+		line-height: 36px;
+		line-height: 1.059em;
+		letter-spacing: 1.57px;
+		letter-spacing: 0.046em;
+		color: $colorSeven;
+		font-weight: 400;
+		margin-bottom: 0;
+	}

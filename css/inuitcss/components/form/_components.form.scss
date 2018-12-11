@@ -1,0 +1,156 @@
+.c-form {
+	@include mixingBottom();
+	.o-wrap {
+		position: relative;
+	}
+}
+.c-form_wrap {
+	position: relative;
+	padding: 108px 0;
+	&:before {
+		position: absolute;
+		content: '';
+		background: rgba(230,230,230,0.2);		
+		width: 50vw;
+		left: -50vw;
+		top: 0;
+		height: 100%;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		background: rgba(230,230,230,0.2);		
+		width: 85%;
+		left: 0;
+		top: 0;
+		height: 100%;
+		z-index: -1;
+	}	
+	h3 {
+		color: $colorFour;
+	}
+}
+
+
+            .c-form input[type="text"],
+            .c-form input[type="email"],
+            .c-file-upload .c-file-select {
+                height: 55px;
+                width: 100%;
+                margin-bottom: 18px;
+            }
+
+            .c-file-upload {
+                font-style: italic;
+            }
+            .c-file-upload .c-file-select {
+                display: block;
+                cursor: pointer;
+                text-align: left;
+                overflow: hidden;
+                position: relative;
+            }
+            .c-file-upload .c-file-select .c-file-select-button {
+                display: inline-block;
+                line-height: 60px;
+                float: right;
+                height: 55px;
+                top: 0;
+                margin-top: -6px;
+            }
+            .c-file-upload .c-file-select .c-file-select-name {
+                line-height: 34px;
+                display: inline-block;
+            }
+            .c-file-upload .c-file-select input[type="file"] {
+                z-index: 100;
+                cursor: pointer;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            .c-file-upload .c-file-select.c-file-select-disabled {
+                opacity: 0.65;
+            }
+            .c-file-upload .c-file-select.c-file-select-disabled:hover {
+                cursor: default;
+                display: block;
+                border: 2px solid #dce4ec;
+                color: #34495e;
+                cursor: pointer;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 5px;
+                text-align: left;
+                background: #ffffff;
+                overflow: hidden;
+                position: relative;
+            }
+
+            textarea {
+                margin-bottom: 28px;
+            }
+            textarea,
+            .c-form input[type="text"],
+            .c-form input[type="email"],
+            .c-file-upload .c-file-select {
+                background: #FFF;
+                border: 1px solid $colorFour;
+                padding: 12px;
+                resize: none;                
+            }
+            textarea:focus,
+            .c-form input[type="text"]:focus,
+            .c-form input[type="email"]:focus {
+                outline: none;
+            }      
+
+            .c-submit {
+                display: inline-block;
+            }
+
+            .c-submit_wrap  {
+                text-align: right;
+            }  
+
+            .c-form label {
+                font-size: 14px;
+                letter-spacing: 1.13px;
+                line-height: 19px;
+            }
+
+            .c-confirmation__title {
+                margin-bottom: 0;
+                padding: 8px;
+            }
+
+            .c-confirmation {
+                display: none;
+            }
+
+            .c-confirmation h3,
+            .c-confirmation p {
+                margin-bottom: 0;
+                text-align: center;
+            }
+
+.c-form-advert {
+	font-size: 16px;
+	letter-spacing: 0.18px;
+	line-height: 19px;
+	margin-bottom: 40px;
+}            
+
+
+
+.c-form_img {
+    top: 108px;
+    position: absolute;
+    right: 0;
+    width: 40%;
+    padding-left: 72px;
+}

@@ -1,0 +1,41 @@
+.c-footer {
+	background: $colorFour;
+	padding-top: 80px;
+	padding-bottom: 88px;
+	p {
+		color: $colorSeven;
+		font-size: 16px;
+	}
+	* {
+		color: $colorSeven;
+	}
+	a {
+		color: $colorZero;
+	}
+}
+
+.c-footer_content {
+	margin-bottom: 160px;
+}
+
+.c-footer_content_item {
+	display: inline-block;
+	vertical-align: top;;
+}
+
+.c-footer_logo img {
+	padding-right: 88px;
+}
+
+.c-footer_google-maps {
+	margin-top: 52px;
+	display: inline-block;
+}
+
+.c-footer_copyright {
+	text-align: right;
+	small {
+		color: #colorThree;
+		font-size: 13px;
+	}
+}

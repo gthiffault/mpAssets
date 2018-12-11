@@ -1,0 +1,16 @@
+.c-content {
+	@include mixingBottom();
+	@include ultype()
+}
+
+.c-content_img {
+	position: relative;
+	&:after {
+		position: absolute;
+		content: "";
+		height: 32px;
+		width: 90%;
+		background: $colorFive;
+		bottom: -16px;
+	}
+}

@@ -1,0 +1,31 @@
+.c-service-points {
+	@include mixingBottom();
+	h3 {
+		color: $colorFour;
+	}
+}
+
+.c-service-points_list:first-child {
+
+	margin-bottom: 60px;
+	h3 {
+		margin-top: -13px;
+	}
+}
+
+.c-service-points_list {
+	position: relative;
+	padding-bottom: 60px;
+	&:before {
+		position: absolute;
+		content: "";
+		width: 72px;
+		height: 3px;background: $colorZero;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+#google_map {
+	height: 680px;
+}

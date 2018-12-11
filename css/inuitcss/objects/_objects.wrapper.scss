@@ -1,0 +1,48 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+$inuit-wrapper-width: 1744px !default;
+
+@if (type-of($inuit-wrapper-width) != number) {
+  @error "`#{$inuit-wrapper-width}` needs to be a number.";
+}
+
+.o-wrapper {
+  @include inuit-clearfix();
+  padding-right: 56px;
+  padding-left:  56px;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: $inuit-wrapper-width;
+}
+
+.o-wrapper.-one {
+	max-width: 1696px
+}	
+
+
+.o-wrapper.-two {
+	max-width: 1670px
+}	
+
+.o-wrapper.-three {
+	max-width: 1289px;
+	float: right;
+	padding: 0;
+	margin-top: -380px;
+	position: relative;
+	z-index: 4;
+}	
+
+
+.o-wrap {
+max-width: 1586px;
+padding: 0;
+margin-left: 0;
+}	
+

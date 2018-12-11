@@ -1,0 +1,19 @@
+.c-job-information {
+	@include mixingBottom();
+	.c-job-information_ul {
+		line-height: 30px;
+	}
+	h3 {
+		color: $colorFour;
+	}
+	.c-job-information_div {
+		margin-bottom: 72px;
+	}
+	.-content {
+		@include ultype();
+	}	
+	li span {
+		font-weight: 500;
+	}
+
+}

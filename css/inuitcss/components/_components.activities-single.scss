@@ -1,0 +1,37 @@
+.c-activities_single {
+	@include mixingBottom();
+	h3 {
+		color: $colorFour;
+	}
+	.c-activities_single_div {
+		margin-bottom: 48px;
+	}
+}
+
+.c-activities_single_info {
+	@include mixingTopActivities();
+}
+
+.c-activities_single_info_back {
+	height: 68px;
+	position: relative;
+	max-width: 765px;
+	margin-bottom: 80px;
+	background: $colorZero;
+	h4 {
+	    margin-bottom: 0;
+	    color: #FFF;
+	    padding: 10px 0px;
+	    padding-left: 88px;
+	}
+	&:before {
+    position: absolute;
+    content: "";
+    background: url(../images/icons/items-visuels.svg) -91px -154px no-repeat;
+    height: 27px;
+    width: 42px;
+    transform: rotate(180deg);
+    top: 20px;
+    left: 24px;	
+	}
+}
