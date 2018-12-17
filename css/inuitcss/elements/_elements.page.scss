@@ -27,7 +27,6 @@ body {
 }
 
 p, a, li{
-	font-size: 18px;
 	font-weight: 300;
 }
 
@@ -38,3 +37,41 @@ a {
 main a {
   color: $colorZero;
 }
+
+h1,h2,h3,h4,h5,h6, a {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;  
+}
+
+::-moz-selection { background: transparent; color: $colorFive }
+::selection { background: transparent; color: $colorFive }
+
+h5::-moz-selection { background: transparent; color: $colorZero }
+h5::selection { background: transparent; color: $colorZero }
+
+@media (min-width:320px) { 
+  p, a, li{
+    font-size: 16px;
+  }
+.js-menu-active {
+    overflow-y: hidden;
+}
+
+}  
+@media (min-width:1024px) { 
+  p, a, li{
+    font-size: 17px;
+  }
+.js-menu-active {
+    overflow-y: auto;
+}
+
+}  
+
+@media (min-width:1280px) { 
+  p, a, li{
+    font-size: 18px;
+  }
+}  

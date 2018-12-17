@@ -179,14 +179,32 @@ $inuit-use-markup-fix: false !default;
 
 }
 
+
+
+@media (min-width:840px) { 
+.o-layout--custom-three {
+  > .o-layout__item {
+    padding-left: 32px;
+  }  
+}
 .o-layout--custom-three {
   border-left: 3px solid $colorZero;
   > .o-layout__item {
-    padding-left: 88px;
+    padding-left: 72px;
     padding-top: 40px;
     padding-bottom: 40px;
   }  
+}
 
+
+}
+
+@media (min-width:1024px) { 
+.o-layout--custom-three {
+  > .o-layout__item {
+    padding-left: 72px;
+  }  
+}
 }
 
 .o-layout--custom-four {

@@ -1,12 +1,10 @@
 .c-jobs-available {
 	@include mixingBottom();
 	h3 {
-		color: $colorFour;
 		text-transform: uppercase;
 		border-top: 1px solid $colorTen;
 		margin: 6px 0;
 		padding: 14px 0;
-		padding-left: 24px;
 	}
 	h3:hover {
 		cursor: pointer;
@@ -16,15 +14,42 @@
 	}	
 
 	.c-jobs-available_arrow {
-		position: absolute;
-		right: 24px;
-		height: 56px;
-		width: 64px;
-		background: url(../images/icons/items-visuels.svg) -79px -139px $colorZero;
-		top: 14px;
-		z-index: -1;
+    position: absolute;
+    right: 24px;
+    height: 40px;
+    width: 56px;
+    background: url(../images/icons/items-visuels.svg) -79px -200px #00ADBB;
+    top: 50%;
+    z-index: -1;
+    transform: translate(0,-50%);
 	}
 	li:last-child .c-jobs-available_clickable {
 		border-bottom: 1px solid $colorTen;
 	}
+}
+
+@media (min-width:20em) { 
+.c-jobs-available {
+	h3 {
+		padding-left: 12px;
+	}
+	.c-jobs-available_arrow {
+		display: none;
+	}
+}
+
+
+}
+
+@media (min-width:720px) { 
+.c-jobs-available {
+	h3 {
+		padding-left: 24px;
+		padding-right: 104px;
+		color: $colorFour;
+	}
+	.c-jobs-available_arrow {
+		display: block;
+	}
+}
 }

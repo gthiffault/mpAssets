@@ -7,6 +7,10 @@
 	margin-left: -72px;
 	li {
 		padding-left: 72px;
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
 	}
 	.slick-track {
 		margin-left: 0;
@@ -43,8 +47,7 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     margin: 0;
     width: 100%;
-    margin-left: -24px;
-    margin-top: 104px;
+    margin-top: 80px;
     li {
         position: relative;
         display: inline-block;
@@ -70,6 +73,9 @@ $slick-opacity-not-active: 0.25 !default;
             -moz-osx-font-smoothing: grayscale;
             background: $colorSix;
             border-radius: 100%;            
+        }
+        &:first-child {
+            margin-left: 0;
         }
         &.slick-active button:before {
             color: $slick-dot-color-active;

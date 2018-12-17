@@ -6,6 +6,45 @@
  * Page-level constraining and wrapping elements.
  */
 
+//Value
+$padding-320px: 20px;
+$padding-480px: 24px;
+$padding-600px: 32px;
+$padding-840px: 40px;
+$padding-1024px: 48px;
+$padding-1440: 56px;
+
+
+// Mixins
+  @mixin o-wrapper-padding() {
+    @media (min-width:320px) { 
+      padding-left: $padding-320px;
+      padding-right: $padding-320px;
+    }
+    @media (min-width:480px) { 
+      padding-left: $padding-480px;
+      padding-right: $padding-480px;
+    }
+    @media (min-width:600px) { 
+      padding-left: $padding-600px;
+      padding-right: $padding-600px;
+    }    
+    @media (min-width:840px) { 
+      padding-left: $padding-840px;
+      padding-right: $padding-840px;
+    } 
+    @media (min-width:1024px) { 
+      padding-left: $padding-1024px;
+      padding-right: $padding-1024px;
+    }
+    @media (min-width:1440px) { 
+      padding-left: $padding-1440;
+      padding-right: $padding-1440;
+    }     
+  } 
+
+
+
 $inuit-wrapper-width: 1744px !default;
 
 @if (type-of($inuit-wrapper-width) != number) {
@@ -14,8 +53,7 @@ $inuit-wrapper-width: 1744px !default;
 
 .o-wrapper {
   @include inuit-clearfix();
-  padding-right: 56px;
-  padding-left:  56px;
+  @include o-wrapper-padding();
   margin-right: auto;
   margin-left:  auto;
   max-width: $inuit-wrapper-width;
@@ -34,11 +72,20 @@ $inuit-wrapper-width: 1744px !default;
 	max-width: 1289px;
 	float: right;
 	padding: 0;
-	margin-top: -380px;
 	position: relative;
 	z-index: 4;
 }	
 
+@media (min-width:320px) { 
+.o-wrapper.-three {
+  margin-top: -316px;
+}   
+}
+@media (min-width:1280px) { 
+.o-wrapper.-three {
+  margin-top: -380px;
+}   
+}
 
 .o-wrap {
 max-width: 1586px;

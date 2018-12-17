@@ -1,39 +1,197 @@
-
-	$banner-home-dektop: 689px;
+	$banner-home-002: 400px;
+	$banner-home-003: 423px;
+	$banner-home-004: 540px;
+	$banner-home-005: 689px;
 	@mixin banner-home-height() {
-		@media (min-width:20em) { 
-			height: $banner-home-dektop;
+		@media (min-width:320px) { 
+			height: $banner-home-002;
+		}		
+		@media (min-width:480px) { 
+			height: $banner-home-003;
 		}
+		@media (min-width:840px) { 
+			height: $banner-home-004;
+		}
+		@media (min-width:1440px) { 
+			height: $banner-home-005;
+		}				
 	}
 
-	$banner-page-desktop: 430px;
+	$banner-page-002: 230px;
+	$banner-page-003: 280px;
+	$banner-page-004: 380px;
+	$banner-page-005: 430px;
 	@mixin banner-page-height() {
-		@media (min-width:20em) { 
-			height: $banner-page-desktop;
+		@media (min-width:320px) { 
+			height: $banner-page-002;
+		}		
+		@media (min-width:480px) { 
+			height: $banner-page-003;
 		}
+		@media (min-width:840px) { 
+			height: $banner-page-004;
+		}
+		@media (min-width:1440px) { 
+			height: $banner-page-005;
+		}	
 	}	
 
+
+
+$banner-title-000: 27px;
+$banner-title-001: 32px;
+$banner-title-002: 36px;
+$banner-title-003: 40px;
+$banner-title-004: 44px;
+$banner-title-005: 48px;
+$banner-title-006: 52px;
+$banner-title-007: 56px; 
+	
 	$banner-title-dektop: 56px; 
 	@mixin banner-title-size() {
-		@media (min-width:20em) { 
-			font-size: $banner-title-dektop;
-		}
+	@media (min-width:320px) { 
+		font-size: $banner-title-000;
+	}
+	@media (min-width:400px) { 
+		font-size: $banner-title-001;
+	}
+	@media (min-width:480px) { 
+		font-size: $banner-title-002;
+	}
+	@media (min-width:600px) { 
+		font-size: $banner-title-003;
+	}
+	@media (min-width:720px) { 
+		font-size: $banner-title-004;
+	}
+	@media (min-width:840px) { 
+		font-size: $banner-title-005;
+	}
+	@media (min-width:1024px) { 
+		font-size: $banner-title-006;
+	}		
+	@media (min-width:1280px) { 
+		font-size: $banner-title-007;
+	}
 	}	
+
+
+	$banner-subtitle-000: 18px; 
+	$banner-subtitle-000-1: 22px; 
+	$banner-subtitle-001: 22px;
+	$banner-subtitle-002: 22px; 
+	$banner-subtitle-003: 24px;		
+	$banner-subtitle-004: 22px; 
+	$banner-subtitle-005: 24px;
+	$banner-subtitle-006: 26px; 
+	$banner-subtitle-007: 28px;			
 
 	$banner-subtitle-dektop: 28px; 
 	@mixin banner-subtitle-size() {
-		@media (min-width:20em) { 
-			font-size: $banner-subtitle-dektop;
-		}
+	@media (min-width:320px) { 
+		font-size: $banner-subtitle-000;
+	}
+	@media (min-width:375px) { 
+		font-size: $banner-subtitle-000-1;
+	}	
+	@media (min-width:400px) { 
+		font-size: $banner-subtitle-001;
+	}
+	@media (min-width:480px) { 
+		font-size: $banner-subtitle-002;
+	}
+	@media (min-width:600px) { 
+		font-size: $banner-subtitle-003;
+	}
+	@media (min-width:720px) { 
+		font-size: $banner-subtitle-004;
+	}
+	@media (min-width:840px) { 
+		font-size: $banner-subtitle-005;
+	}
+	@media (min-width:1024px) { 
+		font-size: $banner-subtitle-006;
+	}		
+	@media (min-width:1280px) { 
+		font-size: $banner-subtitle-007;
+	}
 	}	
 
-	$banner-home-subtitle-padding-desktop: 96px; 
-	$banner-home-subtitle-padding-margin-desktop: 176px; 
+
+
+
+
+$width-000: 24px;
+$width-001: 26px;
+$width-002: 34px;
+$width-003: 40px;
+$width-004: 46px;
+$width-005: 52px;
+$width-006: 58px;
+$width-007: 64px; 
+
+
+	@mixin banner-subtitle_before-spacing() {
+	@media (min-width:320px) { 
+		width: $width-000;
+	}
+	@media (min-width:400px) { 
+		width: $width-001;
+	}
+	@media (min-width:480px) { 
+		width: $width-002;
+	}
+	@media (min-width:600px) { 
+		width: $width-003;
+	}
+	@media (min-width:720px) { 
+		width: $width-004;
+	}
+	@media (min-width:840px) { 
+		width: $width-005;
+	}
+	@media (min-width:1024px) { 
+		width: $width-006;
+	}		
+	@media (min-width:1280px) { 
+		width: $width-007;
+	}
+
+
+	}
+
+
+	$banner-home-subtitle-padding-margin-000: 0;
+	$banner-home-subtitle-padding-margin-001: 10.72303922%; 
 	@mixin banner-subtitle-spacing() {
 		@media (min-width:20em) { 
-			padding-left: $banner-home-subtitle-padding-desktop;
-			margin-left:$banner-home-subtitle-padding-margin-desktop;
+			margin-left:$banner-home-subtitle-padding-margin-000;
+			padding-left: $width-000 + 8px;
 		}
+	@media (min-width:400px) { 
+		padding-left: $width-001 + 20px;
+	}
+	@media (min-width:480px) { 
+		padding-left: $width-002 + 24px;
+		margin-left:$banner-home-subtitle-padding-margin-001;
+	}
+	@media (min-width:600px) { 
+		padding-left: $width-003 + 24px;
+	}
+	@media (min-width:720px) { 
+		padding-left: $width-004 + 24px;
+	}
+	@media (min-width:840px) { 
+		padding-left: $width-005 + 24px;
+	}
+	@media (min-width:1024px) { 
+		padding-left: $width-006 + 24px;
+	}		
+	@media (min-width:1280px) { 
+		padding-left: $width-007 + 24px;
+	}
+
+
 	}		
 
 /* ==========================================================================
@@ -42,16 +200,17 @@
 
 	.c-header_banner_home {
 		@include banner-home-height();
+		background-size: cover !important; 
 		position: relative;
-		padding: 56px;
 		background-position: center center !important;
 		.c-header_banner_subtitle {
 			@include banner-subtitle-spacing();
 			position: relative;
+			margin-bottom: 3.429em;
 			&:before {
+				@include banner-subtitle_before-spacing();
 				position: absolute;
 				content: '';
-				width: 72px;
 				height: 3px;
 				background: $colorZero;
 				left: 0;
@@ -64,15 +223,15 @@
 	.c-header_banner_page {
 		@include banner-page-height();
 		position: relative;
-		padding: 56px;
 		background-position: center center !important;
+		background-size: cover !important;
 	}
 
 	.c-header_banner_content {
-		position: relative;
 		width: 100%;
 		position: absolute;
-		bottom: 96px;
+		@include o-wrapper-padding();	
+		bottom: 0;	
 	}
 	.c-header_banner_title {
 		font-family: $fontOne;

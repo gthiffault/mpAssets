@@ -1,16 +1,9 @@
-.c-files_wrap {
-	padding: 88px 104px;
-	background: $colorSix;
-	@include mixingBottom();
-}
-
 .c-files_ul {
 	margin-bottom: 0;
 	li {
 		line-height: 40px;
 		a[href$=".pdf"] {
 			position: relative;
-			padding-left: 80px;
 			color: $colorFour;
 			&:before {
 				position: absolute;
@@ -28,3 +21,92 @@
 	}
 }
 
+@media (min-width:20em) { 
+	.c-files_wrap {
+		padding: 48px 24px;
+		background: $colorSix;
+		@include mixingBottom();
+	}
+	.c-files_ul {
+		li {
+			a[href$=".pdf"] {
+				padding: 0 32px;
+			}	
+		}
+	}	
+}
+
+@media (min-width:480px) { 
+	.c-files_wrap {
+		padding: 56px 40px;
+		background: $colorSix;
+		@include mixingBottom();
+	}
+	.c-files_ul {
+		li {
+			a[href$=".pdf"] {
+				padding: 0 40px;
+			}	
+		}
+	}		
+}
+
+@media (min-width:720px) { 
+	.c-files_wrap {
+		padding: 64px 56px;
+		background: $colorSix;
+		@include mixingBottom();
+	}
+	.c-files_ul {
+		li {
+			a[href$=".pdf"] {
+				padding: 0 50px;
+			}	
+		}
+	}		
+}
+
+@media (min-width:840px) { 
+	.c-files_wrap {
+		padding: 72px 72px;
+		background: $colorSix;
+		@include mixingBottom();
+	}
+	.c-files_ul {
+		li {
+			a[href$=".pdf"] {
+				padding:0 60px;
+			}	
+		}
+	}		
+}
+
+@media (min-width:960px) { 
+	.c-files_wrap {
+		padding: 80px 88px;
+		background: $colorSix;
+		@include mixingBottom();
+	}
+	.c-files_ul {
+		li {
+			a[href$=".pdf"] {
+				padding-left: 70px;
+			}	
+		}
+	}		
+}
+
+@media (min-width:1280px) { 
+	.c-files_wrap {
+		padding: 64px 104px;
+		background: $colorSix;
+		@include mixingBottom();
+	}
+	.c-files_ul {
+		li {
+			a[href$=".pdf"] {
+				padding: 0 80px;
+			}	
+		}
+	}		
+}

@@ -20,7 +20,6 @@
 		position: absolute;
 		content: '';
 		background: rgba(230,230,230,0.2);		
-		width: 85%;
 		left: 0;
 		top: 0;
 		height: 100%;
@@ -138,6 +137,37 @@
                 text-align: center;
             }
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid $colorZero !important;
+  -webkit-text-fill-color: $colorFour;
+  -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.parsley-errors-list {
+    list-style-type: none;
+    margin-left: 0;
+    li {
+        font-size: 14px;
+        font-weight: 500;
+            color: #dc3545;
+    }
+}
+
+.invalid-form-error-message.filled p {
+              color: #dc3545 !important;
+              font-weight: 500;
+}
+
 .c-form-advert {
 	font-size: 16px;
 	letter-spacing: 0.18px;
@@ -145,12 +175,37 @@
 	margin-bottom: 40px;
 }            
 
+@media (min-width:320px) { 
+    .c-form_img {
+    display: none;
+    }
+    .c-form_wrap {
+        &:after {
+            width: 150%;
+        }
+    }
+}
 
+@media (min-width:480px) { 
+    .c-form_wrap {
+        &:after {
+            width: 90%;
+        }
+    }
+}
 
-.c-form_img {
-    top: 108px;
-    position: absolute;
-    right: 0;
-    width: 40%;
-    padding-left: 72px;
+@media (min-width:1024px) { 
+    .c-form_img {
+        display: block;
+        top: 108px;
+        position: absolute;
+        right: 0;
+        width: 40%;
+        padding-left: 72px;
+    }
+    .c-form_wrap {
+        &:after {
+            width: 85%;
+        }
+    }
 }

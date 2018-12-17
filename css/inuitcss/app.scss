@@ -74,6 +74,7 @@
  * Hide.................Helper classes to hide content
  */
 
+@import "_vars";
 // SETTINGS
 @import "settings/example.settings.config";
 @import "settings/settings.core";
@@ -87,6 +88,7 @@
 @import "tools/tools.font-size";
 @import "tools/tools.clearfix";
 @import "tools/tools.hidden";
+@import "tools/tools.mq";
 
 
 
@@ -97,6 +99,7 @@
 @import "generic/generic.normalize";
 @import "generic/generic.reset";
 @import "generic/generic.shared";
+@import "generic/generic._mixins";
 
 
 
@@ -170,6 +173,7 @@
 // VENDORS
 @import "vendors/vendors.slick";
 @import "vendors/vendors.lightbox";
+@import "vendors/vendors.hamburger";
 
 
 

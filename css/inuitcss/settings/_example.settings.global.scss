@@ -27,6 +27,7 @@ $global-transition: all 300ms ease-in-out !default;
 	$colorEight	: #F2F2F2;	
 	$colorNine	: #000;
 	$colorTen	: #434343;
+	$colorEleven	: #868686;
 
 /* ========================================================================
 	SPACING
@@ -79,11 +80,29 @@ $spacing-top-zero: 		-128px;
 				top: 0;
 				background: $colorZero;
 			}
+		}
+
+		@media (min-width:20em) { 
+		ul {
+			li {
+				padding-left: 24px;
+				line-height: 32px;
+				margin-bottom: 16px;
+			}
+		}
+		}
+
+		@media (min-width:720px) { 
+		ul {
 			li {
 				padding-left: 40px;
 				line-height: 32px;
+				margin-bottom: 16px;
 			}
 		}
+		}
+
+
 	}		
 
 

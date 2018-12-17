@@ -2,9 +2,6 @@
 		@include mixingBottom();
 		.c-activities_ul {
 			margin-bottom: 96px;
-			li:nth-child(2n + 0) {
-				margin-top: 128px;
-			}
 			li {
 				margin-bottom: 112px;
 				figure {
@@ -22,18 +19,9 @@
 					}
 				}
 				figcaption {
-					padding: 48px 32px;
 					position: relative;
 					.c-activities_link_box {
 						position: absolute;
-						width: 105px;
-						height: 72px;
-						bottom: -34px;
-						right: -18px;
-						background: url(../images/icons/items-visuels.svg) -57px -130px $colorZero;
-						&:hover {
-							background: url(../images/icons/items-visuels.svg) -57px -130px $colorFour;
-						}
 					}
 					.c-activities_link {
 						display: block;
@@ -54,7 +42,6 @@
 	}
 
 	.c-activities_title {
-		font-size: 28px;
 		line-height: 36px;
 		line-height: 1.125em;
 		letter-spacing: 0.58px;
@@ -78,10 +65,18 @@
     border-radius: 0;
     overflow: hidden;
     background-color: #fff;
-
-    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+    position: relative;
 }
 
+.c-activities_filter_select:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    background: url(../images/icons/items-visuels.svg) -41px -152px;
+    width: 16px;
+    height: 27px;
+    top: 0;
+}
 .c-activities_filter_select select {
     padding: 5px 8px;
     width: 100%;
@@ -100,4 +95,174 @@
 
 .c-filter_title {
 	text-transform: uppercase;
+}
+@media (min-width:320px) { 
+.c-activities_filter {
+	padding-bottom: 96px;
+}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 20px;
+				}			
+			}
+		}
+	}
+	.c-activities_title {
+		font-size: 22px;
+	}	
+
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					.c-activities_link_box {
+						width: 80px;
+						height: 54px;
+						bottom: -27px;
+						right: -8px;
+						background: url(../images/icons/items-visuels.svg) -71px -139px $colorZero;
+						&:hover {
+							background: url(../images/icons/items-visuels.svg) -71px -139px $colorFour;
+						}
+					}
+				}	
+		}
+	}	
+
+}
+}
+
+@media (min-width:480px) { 
+	.c-activities_title {
+		font-size: 23px;
+	}
+}	
+
+@media (min-width:600px) { 
+	.c-activities_title {
+		font-size: 28px;
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 32px;
+				}			
+			}
+		}
+	}
+
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					.c-activities_link_box {
+						width: 105px;
+						height: 72px;
+						bottom: -34px;
+						right: -8px;
+						background: url(../images/icons/items-visuels.svg) -57px -130px $colorZero;
+						&:hover {
+							background: url(../images/icons/items-visuels.svg) -57px -130px $colorFour;
+						}
+					}
+				}	
+		}
+	}	
+}
+
+
+}	
+@media (min-width:840px) { 
+	.c-activities_title {
+		font-size: 22px;
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 20px;
+				}			
+			}
+		}
+	}
+
+	.c-activities {
+		.c-activities_ul {
+			li:nth-child(2n + 0) {
+				margin-top: 128px;
+			}
+		}
+	}
+
+
+
+
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					.c-activities_link_box {
+						width: 80px;
+						height: 54px;
+						bottom: -27px;
+						right: -8px;
+						background: url(../images/icons/items-visuels.svg) -71px -139px $colorZero;
+						&:hover {
+							background: url(../images/icons/items-visuels.svg) -71px -139px $colorFour;
+						}
+					}
+				}	
+		}
+	}	
+
+}
+.c-activities_filter {
+	padding-bottom: 0;
+}
+
+}
+@media (min-width:20px) { 
+
+}		
+	
+@media (min-width:1024px) { 
+	.c-activities_title {
+		font-size: 23px;
+	}
+}	
+@media (min-width:1280px) { 
+	.c-activities_title {
+		font-size: 28px;
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 32px;
+				}			
+			}
+		}
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					.c-activities_link_box {
+						width: 105px;
+						height: 72px;
+						bottom: -34px;
+						right: -18px;
+						background: url(../images/icons/items-visuels.svg) -57px -130px $colorZero;
+						&:hover {
+							background: url(../images/icons/items-visuels.svg) -57px -130px $colorFour;
+						}
+					}
+				}	
+		}
+	}	
+}
+
 }

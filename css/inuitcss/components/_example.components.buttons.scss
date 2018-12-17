@@ -25,7 +25,7 @@
   cursor: pointer; /* [5] */
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
   transition: $global-transition;
-  border-radius: $global-radius;
+
 }
 
 
@@ -36,69 +36,139 @@
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: #4a8ec2;
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  background-color: #FFF;
+  border: 1px solid $colorZero;
+    color: $colorZero;  
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $colorZero;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+  &:hover {
     text-decoration: none; /* [4] */
-    color: #fff;
+  color: #FFF;    
+    &:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
   }
-
-  &:hover,
-  &:focus {
-    background-color: #3774a2;
-  }
-
 }
-
 
 .c-btn--secondary {
   background-color: $colorSix;
+  color: $colorFour;
   float: right;
   position: relative;
   border-radius: 0;
-  font-family: $fontOne;
-  font-size: 18px;
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: $colorFour;
+  font-family: $fontOne;  
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $colorZero;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
   }
-
-  &:hover,
-  &:focus {
-    background-color: #1d2733;
+  &:hover {
+    text-decoration: none; /* [4] */
+  color: #FFF;    
+    &:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
   }
-
 }
+
+
 
 
 .c-btn--tertiary {
   background-color: $colorZero;
-  color: $colorSeven;
 
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: $colorSeven;
+  float: right;
+  position: relative;
+  padding: 0;
+  font-family: $fontOne;  
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  border: 1px solid $colorZero;  
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#FFF;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
   }
-
-  &:hover,
-  &:focus {
-    color: $colorSeven;
+  &:hover {
+    text-decoration: none; /* [4] */
+    color: $colorFour;    
+    &:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
   }
-
 }
 
-
-
+.c-btn_submit {
+    background: transparent;
+    border: none;
+      color: #FFF;
+    padding: 12px 24px;
+    
+  transition: color 1000ms;    
+    &:hover {
+      text-decoration: none; /* [4] */
+      color: $colorFour;     
+      cursor: pointer;  
+    }
+}
 
 
 /* Size variants

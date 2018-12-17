@@ -1,8 +1,9 @@
 .c-gallery {
 	@include mixingBottom();
+	position: relative;
 	h2 {
 		color: #FFF;
-		padding-bottom: 380px;
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 		&:after {
 			color:$colorSeven;
 			z-index: 1;
@@ -11,8 +12,6 @@
 	.c-gallery_div {
 		width: 100%;
 		padding-top: 122px;
-		max-width: 1342px;
-		background: $colorZero;
 		position: relative;
 		&:before {
 			position: absolute;
@@ -23,7 +22,51 @@
 			margin-left: -50vw;
 			background: $colorZero;
 		}
+		&:after {
+			position: absolute;
+			content: '';			
+			top: 0;
+			background: $colorZero;
+			height: 100%;
+			z-index: -1;
+		}		
 	}
+}
+
+@media (min-width:320px) { 
+.c-gallery {
+	h2 {
+		padding-bottom: 316px;
+	}	
+	.c-gallery_div {
+		&:after {
+			width: 150%;
+		}		
+	}
+}
+}
+
+
+@media (min-width:1024px) { 
+.c-gallery {
+	.c-gallery_div {
+		&:after {
+			width: 90%;
+		}		
+	}
+}
+}
+@media (min-width:1280px) { 
+.c-gallery {
+	h2 {
+		padding-bottom: 380px;
+	}	
+	.c-gallery_div {
+		&:after {
+			width: 85%;
+		}		
+	}
+}
 }
 
 .c-gallery_item {
