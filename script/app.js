@@ -394,16 +394,15 @@ $('.c-gallery_item').slickLightbox();
 			    	},
 
 			    	fadeOut: function() {
-$('.c-load-page_animation svg').remove();
+						$('.c-load-page_animation svg').remove();
 						TweenLite.to($('.c-load-page'), 0, {
 						    left:"-100vw"
 						});  
 
-
-						TweenLite.to($('.c-load-page'), 0.75, {
+						TweenLite.to($('.c-load-page'), 0.5, {
 						    height: '100%',
 						    width: '100%',
-						    ease: Sine.easeInOut, 
+						    ease: Power4.easeInOut, 
 						    opacity:1,
 						    zIndex:342,
 						    left:0,
@@ -413,7 +412,6 @@ $('.c-load-page_animation svg').remove();
 						    marginLeft:-120,
 						    zIndex:999
 						});  
-
 
 						TweenLite.to($('.c-load-page_animation_logo'), 0.75, {
 						    opacity:1,
@@ -425,22 +423,23 @@ $('.c-load-page_animation svg').remove();
 						    marginLeft:-120
 						}); 
 
-
 						TweenLite.to($('#progressbar'), 0.75, {
 						    opacity:1,
 							delay:0.5,
 							 marginLeft:0
 						});  						
 
-
-
 			    	},
 
 				    fadeIn: function() {
+				    	
 				        var _this = this;
 				        var $el = $(this.newContainer);
-				        $(function() {});
-				        _this.done();
+				        setTimeout(function() {
+				        $(function() {_this.done();});
+
+				        
+				    },500);
 				    }
 
 				});
