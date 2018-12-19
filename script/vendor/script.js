@@ -399,7 +399,7 @@ $('.c-gallery_item').slickLightbox();
 						    left:"-100vw"
 						});  
 
-						TweenLite.to($('.c-load-page'), 0.5, {
+						TweenLite.to($('.c-load-page'), 0.75, {
 						    height: '100%',
 						    width: '100%',
 						    ease: Power4.easeInOut, 
