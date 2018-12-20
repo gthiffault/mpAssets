@@ -738,6 +738,10 @@ a {
 main a {
   color: #00ADBB; }
 
+main a:hover,
+.c-footer a:hover {
+  text-decoration: underline; }
+
 ::selection {
   background: transparent;
   color: #CF633C; }
@@ -2755,6 +2759,8 @@ table {
         @media (min-width: 1440px) {
           .c-list-program_ul li figure figcaption h3 {
             font-size: 28px; } }
+      .c-list-program_ul li figure figcaption a:hover {
+        text-decoration: none; }
       .c-list-program_ul li figure figcaption:before {
         position: absolute;
         content: '';

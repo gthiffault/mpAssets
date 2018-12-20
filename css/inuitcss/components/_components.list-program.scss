@@ -129,6 +129,9 @@
 						hyphens: none;
 						margin-bottom: 0;
 					}
+					a:hover {
+						text-decoration: none;
+					}					
 					&:before {
 						position: absolute;
 						content: '';
