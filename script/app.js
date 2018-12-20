@@ -284,7 +284,7 @@ if($('#google_map').length) {
 			map.setMapTypeId('map_style');
 			var infowindow = new google.maps.InfoWindow();
 			var image = {
-				url: 'http://painchaud.test/assets/images/icons/maison-painchaud-marker.svg',
+				url: 'http://staging-painchaud.agencezel.com/assets/images/icons/maison-painchaud-marker.svg',
 				scaledSize: new google.maps.Size(51, 78),
 			};
 			var marker, i;
