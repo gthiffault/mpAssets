@@ -3233,6 +3233,8 @@ table {
         .c-activities .c-activities_ul li figure:hover .c-activities_image:before {
           position: absolute;
           width: 90%; }
+      .c-activities .c-activities_ul li figure:hover .c-activities_link_box {
+        background-position: left bottom; }
     .c-activities .c-activities_ul li figcaption {
       position: relative; }
       .c-activities .c-activities_ul li figcaption a {
@@ -3245,8 +3247,6 @@ table {
         background-position: right bottom;
         -webkit-transition: all .35s ease-out;
         transition: all .35s ease-out; }
-        .c-activities .c-activities_ul li figcaption .c-activities_link_box:hover {
-          background-position: left bottom; }
       .c-activities .c-activities_ul li figcaption .c-activities_link {
         display: block;
         height: 100%; }

@@ -34,7 +34,10 @@
 								position: absolute;
 								width: 90%;
 							}
-						}						
+						}	
+						.c-activities_link_box{
+							background-position: left bottom;
+						}
 					}
 				}
 				figcaption {
@@ -48,10 +51,6 @@
 						background-size: 200% 100%;
 						background-position: right bottom;
 						transition: all .35s ease-out;	
-						&:hover {
-							  background-position: left bottom;
-						}
-
 					}
 					.c-activities_link {
 						display: block;
