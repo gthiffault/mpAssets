@@ -115,7 +115,7 @@
 					margin-bottom: 104px;
 					position: relative;
 					z-index: 1;
-					a {
+					h3 {
 						font-family: $fontOne;
 						@include home-program-link();
 						line-height: 46px;
@@ -127,6 +127,7 @@
 						text-transform: uppercase;
 						font-weight: 400;
 						hyphens: none;
+						margin-bottom: 0;
 					}
 					&:before {
 						position: absolute;

@@ -2723,7 +2723,7 @@ table {
           padding: 102px 48px;
           margin-left: 48px;
           margin-right: 48px; } }
-      .c-list-program_ul li figure figcaption a {
+      .c-list-program_ul li figure figcaption h3 {
         font-family: "Montserrat", sans-serif;
         line-height: 46px;
         line-height: 1.643em;
@@ -2735,24 +2735,25 @@ table {
         font-weight: 400;
         -webkit-hyphens: none;
             -ms-hyphens: none;
-                hyphens: none; }
+                hyphens: none;
+        margin-bottom: 0; }
         @media (min-width: 320px) {
-          .c-list-program_ul li figure figcaption a {
+          .c-list-program_ul li figure figcaption h3 {
             font-size: 20px; } }
         @media (min-width: 480px) {
-          .c-list-program_ul li figure figcaption a {
+          .c-list-program_ul li figure figcaption h3 {
             font-size: 24px; } }
         @media (min-width: 600px) {
-          .c-list-program_ul li figure figcaption a {
+          .c-list-program_ul li figure figcaption h3 {
             font-size: 28px; } }
         @media (min-width: 1024px) {
-          .c-list-program_ul li figure figcaption a {
+          .c-list-program_ul li figure figcaption h3 {
             font-size: 20px; } }
         @media (min-width: 1280px) {
-          .c-list-program_ul li figure figcaption a {
+          .c-list-program_ul li figure figcaption h3 {
             font-size: 24px; } }
         @media (min-width: 1440px) {
-          .c-list-program_ul li figure figcaption a {
+          .c-list-program_ul li figure figcaption h3 {
             font-size: 28px; } }
       .c-list-program_ul li figure figcaption:before {
         position: absolute;
@@ -3174,7 +3175,8 @@ table {
   letter-spacing: 0.018em;
   text-decoration: none;
   color: #5D5D61;
-  font-weight: 400; }
+  font-weight: 400;
+  text-transform: none; }
 
 .c-activities_filter {
   text-align: right; }
