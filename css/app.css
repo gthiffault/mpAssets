@@ -2688,43 +2688,37 @@ table {
       margin-bottom: 128px; } }
 
 .c-list-program_ul li {
+  margin-bottom: 104px;
   max-width: 568px; }
   .c-list-program_ul li figure {
     margin-bottom: 0; }
     .c-list-program_ul li figure figcaption {
       background: #FFFFFF;
       margin-top: -104px;
-      margin-bottom: 104px;
       position: relative;
       z-index: 1; }
       @media (min-width: 320px) {
         .c-list-program_ul li figure figcaption {
-          padding: 56px 12px;
           margin-left: 12px;
           margin-right: 12px; } }
       @media (min-width: 480px) {
         .c-list-program_ul li figure figcaption {
-          padding: 80px 24px;
           margin-left: 24px;
           margin-right: 24px; } }
       @media (min-width: 600px) {
         .c-list-program_ul li figure figcaption {
-          padding: 102px 48px;
           margin-left: 48px;
           margin-right: 48px; } }
       @media (min-width: 1024px) {
         .c-list-program_ul li figure figcaption {
-          padding: 56px 12px;
           margin-left: 12px;
           margin-right: 12px; } }
       @media (min-width: 1280px) {
         .c-list-program_ul li figure figcaption {
-          padding: 80px 24px;
           margin-left: 24px;
           margin-right: 24px; } }
       @media (min-width: 1920px) {
         .c-list-program_ul li figure figcaption {
-          padding: 102px 48px;
           margin-left: 48px;
           margin-right: 48px; } }
       .c-list-program_ul li figure figcaption h3 {
@@ -2759,9 +2753,31 @@ table {
         @media (min-width: 1440px) {
           .c-list-program_ul li figure figcaption h3 {
             font-size: 28px; } }
+      .c-list-program_ul li figure figcaption a {
+        display: block; }
+        @media (min-width: 320px) {
+          .c-list-program_ul li figure figcaption a {
+            padding: 56px 12px; } }
+        @media (min-width: 480px) {
+          .c-list-program_ul li figure figcaption a {
+            padding: 80px 24px; } }
+        @media (min-width: 600px) {
+          .c-list-program_ul li figure figcaption a {
+            padding: 102px 48px; } }
+        @media (min-width: 1024px) {
+          .c-list-program_ul li figure figcaption a {
+            padding: 56px 12px; } }
+        @media (min-width: 1280px) {
+          .c-list-program_ul li figure figcaption a {
+            padding: 80px 24px; } }
+        @media (min-width: 1920px) {
+          .c-list-program_ul li figure figcaption a {
+            padding: 102px 48px; } }
       .c-list-program_ul li figure figcaption a:hover {
         text-decoration: none; }
       .c-list-program_ul li figure figcaption:before {
+        -webkit-transition: all .25s linear;
+        transition: all .25s linear;
         position: absolute;
         content: '';
         background: #00ADBB;
@@ -2791,6 +2807,8 @@ table {
             left: 48px;
             width: 96px; } }
       .c-list-program_ul li figure figcaption:after {
+        -webkit-transition: all .35s linear;
+        transition: all .35s linear;
         position: absolute;
         content: '';
         background: #00ADBB;
@@ -2819,6 +2837,42 @@ table {
           .c-list-program_ul li figure figcaption:after {
             left: 48px;
             width: 96px; } }
+  @media (min-width: 320px) {
+    .c-list-program_ul li:hover figcaption:before {
+      width: 96px; } }
+  @media (min-width: 480px) {
+    .c-list-program_ul li:hover figcaption:before {
+      width: 120px; } }
+  @media (min-width: 600px) {
+    .c-list-program_ul li:hover figcaption:before {
+      width: 144px; } }
+  @media (min-width: 1024px) {
+    .c-list-program_ul li:hover figcaption:before {
+      width: 96px; } }
+  @media (min-width: 1280px) {
+    .c-list-program_ul li:hover figcaption:before {
+      width: 120px; } }
+  @media (min-width: 1920px) {
+    .c-list-program_ul li:hover figcaption:before {
+      width: 144px; } }
+  @media (min-width: 320px) {
+    .c-list-program_ul li:hover figcaption:after {
+      width: 96px; } }
+  @media (min-width: 480px) {
+    .c-list-program_ul li:hover figcaption:after {
+      width: 120px; } }
+  @media (min-width: 600px) {
+    .c-list-program_ul li:hover figcaption:after {
+      width: 144px; } }
+  @media (min-width: 1024px) {
+    .c-list-program_ul li:hover figcaption:after {
+      width: 96px; } }
+  @media (min-width: 1280px) {
+    .c-list-program_ul li:hover figcaption:after {
+      width: 120px; } }
+  @media (min-width: 1920px) {
+    .c-list-program_ul li:hover figcaption:after {
+      width: 144px; } }
 
 @media (min-width: 320px) {
   .c-list-program_ul {
