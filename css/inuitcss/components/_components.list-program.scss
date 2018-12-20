@@ -152,13 +152,19 @@
 		li {
 								margin-bottom: 104px;
 			max-width: 568px;
+			div {
+				overflow: hidden;
+			}
 			figure {
 				margin-bottom: 0;
+				img {
+					transition: all 0.35s linear;
+					transform: scale(1);
+				}
 				figcaption {
 					background: $colorSeven;
 					@include home-program-figcaption();
 					margin-top: -104px;
-
 					position: relative;
 					z-index: 1;
 					h3 {
@@ -176,8 +182,8 @@
 						margin-bottom: 0;
 					}
 					a {
-											@include home-program-figcaption_link();
-											display: block;
+						@include home-program-figcaption_link();
+						display: block;
 					}
 					a:hover {
 						text-decoration: none;
@@ -200,15 +206,18 @@
 					}									
 				}
 			}
-		&:hover {
+			&:hover {
 				figcaption {
 					&:before {
-@include home-program-before-after_hover();
+						@include home-program-before-after_hover();
 					}
 					&:after {
-@include home-program-before-after_hover();
+						@include home-program-before-after_hover();
 					}						
 				}
+				img {
+					transform: scale(1.1);
+				}				
 			}
 		}
 
