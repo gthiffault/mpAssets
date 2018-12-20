@@ -3209,16 +3209,34 @@ table {
       -webkit-box-shadow: 4px 4px 7px 0px rgba(190, 190, 190, 0.5);
               box-shadow: 4px 4px 7px 0px rgba(190, 190, 190, 0.5); }
       .c-activities .c-activities_ul li figure .c-activities_image {
+        overflow: hidden;
         position: relative; }
+        .c-activities .c-activities_ul li figure .c-activities_image img {
+          -webkit-transition: all 0.35s linear;
+          transition: all 0.35s linear; }
         .c-activities .c-activities_ul li figure .c-activities_image:before {
           position: absolute;
           content: '';
           height: 22px;
           width: 76%;
           background: #00ADBB;
-          bottom: 0; }
+          bottom: 0;
+          z-index: 1;
+          -webkit-transition: all 0.35s linear;
+          transition: all 0.35s linear; }
+      .c-activities .c-activities_ul li figure:hover .c-activities_image {
+        position: relative; }
+        .c-activities .c-activities_ul li figure:hover .c-activities_image img {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1); }
+        .c-activities .c-activities_ul li figure:hover .c-activities_image:before {
+          position: absolute;
+          width: 90%; }
     .c-activities .c-activities_ul li figcaption {
       position: relative; }
+      .c-activities .c-activities_ul li figcaption a {
+        text-decoration: none; }
       .c-activities .c-activities_ul li figcaption .c-activities_link_box {
         position: absolute;
         background: -webkit-gradient(linear, left top, right top, color-stop(50%, #5D5D61), color-stop(50%, #00ADBB));
@@ -3295,7 +3313,7 @@ table {
 @media (min-width: 320px) {
   .c-activities_filter {
     padding-bottom: 96px; }
-  .c-activities .c-activities_ul li figcaption {
+  .c-activities .c-activities_ul li figcaption .c-activities_link {
     padding: 48px 20px; }
   .c-activities_title {
     font-size: 22px; }
@@ -3315,32 +3333,32 @@ table {
 @media (min-width: 600px) {
   .c-activities_title {
     font-size: 28px; }
-  .c-activities .c-activities_ul li figcaption {
+  .c-activities .c-activities_ul li figcaption .c-activities_link {
     padding: 48px 32px; }
-    .c-activities .c-activities_ul li figcaption .c-activities_link_box {
-      width: 105px;
-      height: 72px;
-      bottom: -34px;
-      right: -8px; }
-      .c-activities .c-activities_ul li figcaption .c-activities_link_box .c-activities_link_arrow {
-        height: 100%;
-        background: url(../images/icons/items-visuels.svg) -57px -130px; } }
+  .c-activities .c-activities_ul li figcaption .c-activities_link_box {
+    width: 105px;
+    height: 72px;
+    bottom: -34px;
+    right: -8px; }
+    .c-activities .c-activities_ul li figcaption .c-activities_link_box .c-activities_link_arrow {
+      height: 100%;
+      background: url(../images/icons/items-visuels.svg) -57px -130px; } }
 
 @media (min-width: 840px) {
   .c-activities_title {
     font-size: 22px; }
   .c-activities_filter {
     padding-bottom: 0; }
-  .c-activities .c-activities_ul li figcaption {
+  .c-activities .c-activities_ul li figcaption .c-activities_link {
     padding: 48px 20px; }
-    .c-activities .c-activities_ul li figcaption .c-activities_link_box {
-      width: 80px;
-      height: 54px;
-      bottom: -27px;
-      right: -8px; }
-      .c-activities .c-activities_ul li figcaption .c-activities_link_box .c-activities_link_arrow {
-        height: 100%;
-        background: url(../images/icons/items-visuels.svg) -71px -139px; }
+  .c-activities .c-activities_ul li figcaption .c-activities_link_box {
+    width: 80px;
+    height: 54px;
+    bottom: -27px;
+    right: -8px; }
+    .c-activities .c-activities_ul li figcaption .c-activities_link_box .c-activities_link_arrow {
+      height: 100%;
+      background: url(../images/icons/items-visuels.svg) -71px -139px; }
   .c-activities .c-activities_ul li:nth-child(2n + 0) {
     margin-top: 128px; } }
 
@@ -3351,16 +3369,16 @@ table {
 @media (min-width: 1280px) {
   .c-activities_title {
     font-size: 28px; }
-  .c-activities .c-activities_ul li figcaption {
+  .c-activities .c-activities_ul li figcaption .c-activities_link {
     padding: 48px 32px; }
-    .c-activities .c-activities_ul li figcaption .c-activities_link_box {
-      width: 105px;
-      height: 72px;
-      bottom: -34px;
-      right: -18px; }
-      .c-activities .c-activities_ul li figcaption .c-activities_link_box .c-activities_link_arrow {
-        height: 100%;
-        background: url(../images/icons/items-visuels.svg) -57px -132px; } }
+  .c-activities .c-activities_ul li figcaption .c-activities_link_box {
+    width: 105px;
+    height: 72px;
+    bottom: -34px;
+    right: -18px; }
+    .c-activities .c-activities_ul li figcaption .c-activities_link_box .c-activities_link_arrow {
+      height: 100%;
+      background: url(../images/icons/items-visuels.svg) -57px -132px; } }
 
 @media (min-width: 20em) {
   .c-activities_single {
