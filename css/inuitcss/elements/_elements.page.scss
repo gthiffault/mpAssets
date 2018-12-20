@@ -20,6 +20,7 @@ html {
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
   font-family: $fontOne; /* [4] */
+  min-width: 320px;
 }
 
 body {
@@ -38,12 +39,7 @@ main a {
   color: $colorZero;
 }
 
-h1,h2,h3,h4,h5,h6, a {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;  
-}
+
 
 ::-moz-selection { background: transparent; color: $colorFive }
 ::selection { background: transparent; color: $colorFive }
@@ -58,8 +54,27 @@ h5::selection { background: transparent; color: $colorZero }
 .js-menu-active {
     overflow-y: hidden;
 }
+  .c-content_first-column {
+    margin-bottom: 96px;  
+  }
 
 }  
+
+@media (max-width:400px) { 
+h1,h2,h3,h4,h5,h6, a {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;  
+}
+}
+
+@media (min-width:960px) { 
+  .c-content_first-column {
+    margin-bottom: 0;
+  }
+} 
+
 @media (min-width:1024px) { 
   p, a, li{
     font-size: 17px;

@@ -94,7 +94,7 @@
 		@media (min-width:1440px) { 
 			font-size: $home-program-link-size;
 		}	
-			
+
 	}
 
 	.c-list-program {
@@ -126,6 +126,7 @@
 						color: $colorZero;
 						text-transform: uppercase;
 						font-weight: 400;
+						hyphens: none;
 					}
 					&:before {
 						position: absolute;

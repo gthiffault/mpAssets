@@ -1,0 +1,223 @@
+	.c-activities {
+		@include mixingBottom();
+		.c-activities_ul {
+			margin-bottom: 96px;
+			li {
+				margin-bottom: 112px;
+				figure {
+					box-shadow: 4px 4px 7px 0px rgba(190,190,190,0.5);				
+					.c-activities_image {
+						position: relative;
+						&:before {
+							position: absolute;
+							content: '';
+							height: 22px;
+							width: 76%;
+							background: $colorZero;
+							bottom: 0;
+						}
+					}
+				}
+				figcaption {
+					position: relative;
+					.c-activities_link_box{
+						position: absolute;
+						background: linear-gradient(to right, $colorFour 50%, $colorZero 50%);
+						background-size: 200% 100%;
+						background-position: right bottom;
+						transition: all .35s ease-out;	
+						&:hover {
+							  background-position: left bottom;
+						}												
+					}
+					.c-activities_link {
+						display: block;
+						height: 100%;
+					}
+				}			
+			}
+			li:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.c-activities_info {
+		color: $colorThree;
+		line-height: 22px;
+		letter-spacing: 0.36px;
+	}
+
+	.c-activities_title {
+		line-height: 36px;
+		line-height: 1.125em;
+		letter-spacing: 0.58px;
+		letter-spacing: 0.018em;
+		text-decoration: none;
+		color: $colorFour;
+		font-weight: 400;
+	}
+
+	.c-activities_filter {
+		text-align: right;
+	}
+
+	.c-activities_filter_select {
+	    padding: 0;
+	    margin: 0;
+	    margin-left: auto;
+	    border-bottom: 2px solid $colorFive;
+	    width: 280px;
+	    font-size: 18px;
+	    border-radius: 0;
+	    overflow: hidden;
+	    background-color: #fff;
+	    position: relative;
+	}
+
+	.c-activities_filter_select:after {
+	    position: absolute;
+	    content: '';
+	    right: 0;
+	    background: url(../images/icons/items-visuels.svg) -41px -152px;
+	    width: 16px;
+	    height: 27px;
+	    top: 0;
+	}
+	.c-activities_filter_select select {
+	    padding: 5px 8px;
+	    width: 100%;
+	    border: none;
+	    box-shadow: none;
+	    background-color: transparent;
+	    background-image: none;
+	    -webkit-appearance: none;
+	       -moz-appearance: none;
+	            appearance: none;
+	}
+
+	.c-activities_filter_select select:focus {
+	    outline: none;
+	}	
+
+	.c-filter_title {
+		text-transform: uppercase;
+	}
+
+// Media Query
+
+@media (min-width:320px) { 
+	.c-activities_title {
+		font-size: 22px;
+	}		
+	.c-activities_filter {
+		padding-bottom: 96px;
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 20px;
+					.c-activities_link_box {
+							width: 80px;
+							height: 54px;
+							bottom: -27px;
+							right: -8px;						
+						.c-activities_link_arrow {
+							height: 100%;
+							background: url(../images/icons/items-visuels.svg) -71px -139px;
+						}
+					}					
+				}			
+			}
+		}
+	}
+}
+@media (min-width:480px) { 
+	.c-activities_title {
+		font-size: 23px;
+	}
+}	
+@media (min-width:600px) { 
+	.c-activities_title {
+		font-size: 28px;
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 32px;
+					.c-activities_link_box {
+							width: 105px;
+							height: 72px;
+							bottom: -34px;
+							right: -8px;			
+						.c-activities_link_arrow {
+							height: 100%;
+							background: url(../images/icons/items-visuels.svg) -57px -130px;
+						}
+					}					
+				}			
+			}
+		}
+	}
+}	
+@media (min-width:840px) { 
+	.c-activities_title {
+		font-size: 22px;
+	}
+	.c-activities_filter {
+		padding-bottom: 0;
+	}	
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 20px;
+					.c-activities_link_box {
+						width: 80px;
+						height: 54px;
+						bottom: -27px;
+						right: -8px;						
+						.c-activities_link_arrow {
+							height: 100%;
+							background: url(../images/icons/items-visuels.svg) -71px -139px;
+						}
+					}					
+				}			
+			}
+			li:nth-child(2n + 0) {
+				margin-top: 128px;
+			}			
+		}
+	}
+}
+@media (min-width:1024px) { 
+	.c-activities_title {
+		font-size: 23px;
+	}
+}	
+@media (min-width:1280px) { 
+	.c-activities_title {
+		font-size: 28px;
+	}
+	.c-activities {
+		.c-activities_ul {
+			li {
+				figcaption {
+					padding: 48px 32px;
+					.c-activities_link_box {
+						width: 105px;
+						height: 72px;			
+						bottom: -34px;
+						right: -18px;									
+						.c-activities_link_arrow {
+							height: 100%;		
+							background: url(../images/icons/items-visuels.svg) -57px -130px;
+						}
+					}				
+				}			
+			}
+		}
+	}
+}

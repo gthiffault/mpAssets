@@ -224,14 +224,14 @@
 	/* ======================================================================
    		#HEADER // MAIN MENU
 	====================================================================== */
-				
+
 
 		.c-header_nav_mobile {
 			position: absolute;
 			width: 100%;
 			height: 100vh;
 			z-index: 2;
-			left: -100vw;	
+			left: -120vw;	
 			transition: all 0.3s linear;
 			.o-wrapper {
 				background: #FFF;
@@ -255,6 +255,12 @@
 		text-transform: uppercase;
 
 		}
+				a:hover,
+				&.c-current-page a,
+				&.c-parent_li p:hover {
+					color: $colorZero;
+					cursor: pointer;
+				}		
 
 		.c-submenu {
 		display: none;
@@ -282,6 +288,12 @@
 		color: $colorFour;			
 		margin-bottom: 0;
 		}
+				a:hover,
+				&.c-current-page a,
+				&.c-parent_li p:hover {
+					color: $colorZero;
+					cursor: pointer;
+				}		
 		}
 
 		}
@@ -310,7 +322,7 @@
 		}
 
 		.c-header_nav_mobile {
-		left: -100vw !important;
+		left: -120vw !important;
 		}
 
 		}	

@@ -295,7 +295,8 @@ h5 {
 	text-transform: none;
 }
 
-h6 {
+h6,
+.c-footer h3 {
 	@include h6-title-size();
 line-height: 28px;
 letter-spacing: 0.48px;

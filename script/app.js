@@ -413,6 +413,10 @@ $('.c-gallery_item').slickLightbox();
 						    zIndex:999
 						});  
 
+						TweenLite.to($('.c-load-page_animation'), 0, {
+						    zIndex:999,
+						});  						
+
 						TweenLite.to($('.c-load-page_animation_logo'), 0.75, {
 						    opacity:1,
 							delay:0.5,
@@ -494,8 +498,8 @@ $('.c-gallery_item').slickLightbox();
 						    delay:1.5
 						});  
 
-						TweenLite.to($('.c-load-page_animation_logo'), 0, {
-						    zIndex:-2,
+						TweenLite.to($('.c-load-page_animation'), 0, {
+						    zIndex:-9999999999999,
 						    delay:2.5
 						});  
 

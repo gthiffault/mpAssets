@@ -17,27 +17,20 @@
 }
 
 @media (min-width:320px) { 
-.c-content_img {
-	float: right;
-	&:after {
-		height: 16px;
-		bottom: -8px;
+	.c-content_img {
+		float: right;
+		&:after {
+			height: 16px;
+			bottom: -8px;
+			left: 0;
+		}
 	}
-}
-.c-content_first-column {
-margin-bottom: 96px;	
-}
-
-
 }	
 @media (min-width:1280px) { 
-.c-content_img {
-	&:after {
-		height: 32px;
-		bottom: -16px;
+	.c-content_img {
+		&:after {
+			height: 32px;
+			bottom: -16px;
+		}
 	}
-}
-.c-content_first-column {
-margin-bottom: 0;
-}
 }	
