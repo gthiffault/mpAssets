@@ -111,6 +111,10 @@
 ======================================================================== */
 @media (min-width: 20em) {
   .c-mg {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-mg {
     margin-bottom: 128px; } }
 
 /* ==========================================================================
@@ -2347,7 +2351,8 @@ table {
   .c-header_mobile_main_ul li .c-submenu {
     display: none;
     list-style-type: none;
-    margin-left: 16px; }
+    margin-left: 16px;
+    margin-bottom: 6px; }
     .c-header_mobile_main_ul li .c-submenu li {
       line-height: 32px; }
       .c-header_mobile_main_ul li .c-submenu li a {
@@ -2652,6 +2657,10 @@ table {
 
 @media (min-width: 20em) {
   .c-img-txt {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-img-txt {
     margin-bottom: 128px; } }
 
 .c-img-txt h2 {
@@ -2684,6 +2693,9 @@ table {
   background: #E6E6E6;
   padding-top: 104px; }
   @media (min-width: 20em) {
+    .c-list-program {
+      margin-bottom: 80px; } }
+  @media (min-width: 52.5em) {
     .c-list-program {
       margin-bottom: 128px; } }
 
@@ -2932,6 +2944,10 @@ table {
 
 @media (min-width: 20em) {
   .c-partners {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-partners {
     margin-bottom: 128px; } }
 
 .c-partners_ul {
@@ -3084,6 +3100,10 @@ table {
 
 @media (min-width: 20em) {
   .c-accordion {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-accordion {
     margin-bottom: 128px; } }
 
 .c-accordion .c-content,
@@ -3198,6 +3218,10 @@ table {
     padding-left: 48px; } }
 
 @media (min-width: 20em) {
+  .c-activities {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
   .c-activities {
     margin-bottom: 128px; } }
 
@@ -3382,6 +3406,10 @@ table {
 
 @media (min-width: 20em) {
   .c-activities_single {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-activities_single {
     margin-bottom: 128px; } }
 
 .c-activities_single h3 {
@@ -3394,6 +3422,9 @@ table {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear; }
   @media (min-width: 20em) {
+    .c-activities_single_info {
+      margin-top: -80px; } }
+  @media (min-width: 52.5em) {
     .c-activities_single_info {
       margin-top: -128px; } }
 
@@ -3445,15 +3476,20 @@ table {
     line-height: 40px; }
     .c-files_ul li a[href$=".pdf"] {
       position: relative;
-      color: #5D5D61; }
+      color: #5D5D61;
+      line-height: 1.5em;
+      display: inline-block; }
       .c-files_ul li a[href$=".pdf"]:before {
         position: absolute;
         content: "";
-        left: 0;
+        left: -32px;
         width: 25px;
         height: 31px;
         background: url(../images/icons/items-visuels.svg) -37px -42px;
-        top: -5px; }
+        -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+        top: 50%; }
       .c-files_ul li a[href$=".pdf"]:hover:before {
         background: url(../images/icons/items-visuels.svg) -37px -102px; }
 
@@ -3463,11 +3499,15 @@ table {
     background: #E6E6E6; } }
   @media (min-width: 20em) and (min-width: 20em) {
     .c-files_wrap {
+      margin-bottom: 80px; } }
+  @media (min-width: 20em) and (min-width: 52.5em) {
+    .c-files_wrap {
       margin-bottom: 128px; } }
 
 @media (min-width: 20em) {
   .c-files_ul li a[href$=".pdf"] {
-    padding: 0 32px; } }
+    border-left: 32px solid transparent;
+    padding-right: 32px; } }
 
 @media (min-width: 480px) {
   .c-files_wrap {
@@ -3475,11 +3515,15 @@ table {
     background: #E6E6E6; } }
   @media (min-width: 480px) and (min-width: 20em) {
     .c-files_wrap {
+      margin-bottom: 80px; } }
+  @media (min-width: 480px) and (min-width: 52.5em) {
+    .c-files_wrap {
       margin-bottom: 128px; } }
 
 @media (min-width: 480px) {
   .c-files_ul li a[href$=".pdf"] {
-    padding: 0 40px; } }
+    border-left: 40px solid transparent;
+    padding-right: 40px; } }
 
 @media (min-width: 720px) {
   .c-files_wrap {
@@ -3487,11 +3531,15 @@ table {
     background: #E6E6E6; } }
   @media (min-width: 720px) and (min-width: 20em) {
     .c-files_wrap {
+      margin-bottom: 80px; } }
+  @media (min-width: 720px) and (min-width: 52.5em) {
+    .c-files_wrap {
       margin-bottom: 128px; } }
 
 @media (min-width: 720px) {
   .c-files_ul li a[href$=".pdf"] {
-    padding: 0 50px; } }
+    border-left: 50px solid transparent;
+    padding-right: 50px; } }
 
 @media (min-width: 840px) {
   .c-files_wrap {
@@ -3499,11 +3547,15 @@ table {
     background: #E6E6E6; } }
   @media (min-width: 840px) and (min-width: 20em) {
     .c-files_wrap {
+      margin-bottom: 80px; } }
+  @media (min-width: 840px) and (min-width: 52.5em) {
+    .c-files_wrap {
       margin-bottom: 128px; } }
 
 @media (min-width: 840px) {
   .c-files_ul li a[href$=".pdf"] {
-    padding: 0 60px; } }
+    border-left: 60px solid transparent;
+    padding-right: 60px; } }
 
 @media (min-width: 960px) {
   .c-files_wrap {
@@ -3511,11 +3563,15 @@ table {
     background: #E6E6E6; } }
   @media (min-width: 960px) and (min-width: 20em) {
     .c-files_wrap {
+      margin-bottom: 80px; } }
+  @media (min-width: 960px) and (min-width: 52.5em) {
+    .c-files_wrap {
       margin-bottom: 128px; } }
 
 @media (min-width: 960px) {
   .c-files_ul li a[href$=".pdf"] {
-    padding-left: 70px; } }
+    border-left: 70px solid transparent;
+    padding-right: 70px; } }
 
 @media (min-width: 1280px) {
   .c-files_wrap {
@@ -3523,13 +3579,21 @@ table {
     background: #E6E6E6; } }
   @media (min-width: 1280px) and (min-width: 20em) {
     .c-files_wrap {
+      margin-bottom: 80px; } }
+  @media (min-width: 1280px) and (min-width: 52.5em) {
+    .c-files_wrap {
       margin-bottom: 128px; } }
 
 @media (min-width: 1280px) {
   .c-files_ul li a[href$=".pdf"] {
-    padding: 0 80px; } }
+    border-left: 80px solid transparent;
+    padding-right: 80px; } }
 
 @media (min-width: 20em) {
+  .c-jobs-available {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
   .c-jobs-available {
     margin-bottom: 128px; } }
 
@@ -3585,6 +3649,10 @@ table {
     display: block; } }
 
 @media (min-width: 20em) {
+  .c-form {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
   .c-form {
     margin-bottom: 128px; } }
 
@@ -3767,6 +3835,10 @@ select:-webkit-autofill:focus {
 
 @media (min-width: 20em) {
   .c-job-information {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-job-information {
     margin-bottom: 128px; } }
 
 .c-job-information .c-job-information_ul {
@@ -3809,6 +3881,10 @@ select:-webkit-autofill:focus {
 
 @media (min-width: 20em) {
   .c-service-points {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-service-points {
     margin-bottom: 128px; } }
 
 .c-service-points h3 {
@@ -3836,12 +3912,20 @@ select:-webkit-autofill:focus {
 
 @media (min-width: 20em) {
   .c-team_content {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
+  .c-team_content {
     margin-bottom: 128px; } }
 
 .c-team_content p:last-child {
   margin-bottom: 0; }
 
 @media (min-width: 20em) {
+  .c-team_ul li {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
   .c-team_ul li {
     margin-bottom: 128px; } }
 
@@ -3860,6 +3944,9 @@ select:-webkit-autofill:focus {
   position: relative; }
   @media (min-width: 20em) {
     .c-gallery {
+      margin-bottom: 80px; } }
+  @media (min-width: 52.5em) {
+    .c-gallery {
       margin-bottom: 128px; } }
   .c-gallery h2 {
     color: #FFF;
@@ -3869,7 +3956,6 @@ select:-webkit-autofill:focus {
       z-index: 1; }
   .c-gallery .c-gallery_div {
     width: 100%;
-    padding-top: 122px;
     position: relative; }
     .c-gallery .c-gallery_div:before {
       position: absolute;
@@ -3932,8 +4018,14 @@ select:-webkit-autofill:focus {
 @media (min-width: 320px) {
   .c-gallery h2 {
     padding-bottom: 316px; }
-  .c-gallery .c-gallery_div:after {
-    width: 150%; } }
+  .c-gallery .c-gallery_div {
+    padding-top: 78px; }
+    .c-gallery .c-gallery_div:after {
+      width: 150%; } }
+
+@media (min-width: 1024px) {
+  .c-gallery .c-gallery_div {
+    padding-top: 122px; } }
 
 @media (min-width: 1024px) {
   .c-gallery .c-gallery_div:after {
@@ -3946,6 +4038,10 @@ select:-webkit-autofill:focus {
     width: 85%; } }
 
 @media (min-width: 20em) {
+  .c-content {
+    margin-bottom: 80px; } }
+
+@media (min-width: 52.5em) {
   .c-content {
     margin-bottom: 128px; } }
 

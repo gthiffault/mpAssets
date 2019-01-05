@@ -36,6 +36,9 @@ $global-transition: all 300ms ease-in-out !default;
 $spacing-bottom-zero: 	128px;
 $spacing-top-zero: 		-128px;
 
+$spacing-bottom-one: 	80px;
+$spacing-top-one: 		-80px;
+
 
 /* ========================================================================
 	FONT
@@ -55,14 +58,20 @@ $spacing-top-zero: 		-128px;
 
 	@mixin mixingBottom() {
 		@media (min-width:20em) { 
-			margin-bottom: $spacing-bottom-zero
+			margin-bottom: $spacing-bottom-one
 		}
+		@media (min-width:52.500em) { 
+			margin-bottom: $spacing-bottom-zero
+		}				
 	}	
 
 	@mixin mixingTopActivities() {
 		@media (min-width:20em) { 
-			margin-top: $spacing-top-zero;
+			margin-top: $spacing-top-one;
 		}
+		@media (min-width:52.500em) { 
+			margin-top: $spacing-top-zero;
+		}		
 	}		
 
 	@mixin ultype() {
