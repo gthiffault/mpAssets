@@ -235,24 +235,31 @@ if($('#o-form').length) {
 		$('#from-name').val(firstName + " " + lastName);
 	    e.preventDefault();
 		var formData = new FormData(this);
-		if($("#from-email").val() != "" && $("#phone").val() != "" && $("#lname").val() != "" && $("#fname").val() != "" && $("#chooseFile-cv").val() != "") {
-			$.ajax({
-	        			url: '/',
-	        			type: 'POST',
-	       				dataType: 'json',
-	        			data: formData,
-	        			success: function (data) {
-							setTimeout(function() {
-								$('#o-form').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
-								$('.file-select-name').text("Choisir...");
-							}, 500);
-							$('#o-form').slideUp(500, function() { $(this).remove(); } );
-		        		},
-		        		cache: false,
-		        		contentType: false,
-		        		processData: false
-	    			});
-		};
+		
+
+
+// Send it to the server
+    $.post({
+        url: '/',
+        dataType: 'json',
+        data: $(this).serialize(),
+    			success: function (data) {
+    				if($('#o-form').parsley().validate() == true) {
+						setTimeout(function() {
+							$('#o-form').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
+							$('.file-select-name').text("Choisir...");
+						}, 500);
+						setTimeout(function() {
+	                          $('.o-form.-activities .c-success').html('asdf');
+	                          $('.o-form.-contact .c-success').html('dfghdgfh');
+	                          $('.o-form.-career .c-success').html('<h4>Merci</h4><p>Votre demande a été envoyée avec succès. Nous communiquerons avec vous dès que possible</p>');
+	 					}, 500)  
+					}
+        		},
+    });
+
+
+			
 	});
 }
 
