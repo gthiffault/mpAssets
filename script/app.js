@@ -239,7 +239,7 @@ if($('#o-form').length) {
 			$.ajax({
     			url: '/',
     			type: 'POST',
-   				// dataType: 'json',
+   				dataType: 'json',
         		cache: false,
         		contentType: false,
         		processData: false,	       				
@@ -409,8 +409,8 @@ $('.c-gallery_item').slickLightbox();
 						});  
 
 						TweenLite.to($('.c-load-page_animation_logo'), 0, {
-						    marginLeft:-120,
-						    zIndex:999
+						    zIndex:999,
+						    opacity:0
 						});  
 
 						TweenLite.to($('.c-load-page_animation'), 0, {
@@ -424,7 +424,7 @@ $('.c-gallery_item').slickLightbox();
 						});  
 
 						TweenLite.to($('#progressbar'), 0, {
-						    marginLeft:-120
+						     opacity:0
 						}); 
 
 						TweenLite.to($('#progressbar'), 0.75, {

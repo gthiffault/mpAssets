@@ -52,6 +52,18 @@ $h4-title-004: 22px;
 $h4-title-005: 24px;
 $h4-title-007: 26px; 
 
+
+
+$h5-title-000: 20px;
+$h5-title-002: 24px;
+$h5-title-004: 26px;
+$h5-title-005: 31px;
+$h5-title-007: 34px; 
+
+
+
+
+
 $h6-title-000: 18px;
 $h6-title-004: 20px;
 $h6-title-005: 22px;
@@ -187,6 +199,24 @@ $h2_before-title-007: 46px;
 	}						
 }	
 
+@mixin h5-title-size() {
+	@media (min-width:320px) { 
+		font-size: $h5-title-000;
+	}
+	@media (min-width:480px) { 
+		font-size: $h5-title-002;
+	}
+	@media (min-width:720px) { 
+		font-size: $h5-title-004;
+	}
+	@media (min-width:840px) { 
+		font-size: $h5-title-005;
+	}
+	@media (min-width:1280px) { 
+		font-size: $h5-title-007;
+	}						
+}	
+
 @mixin h6-title-size() {
 	@media (min-width:320px) { 
 		font-size: $h6-title-000;
@@ -287,9 +317,11 @@ h4 {
 }
 
 h5 {
-	font-size: 34px;
+	@include h5-title-size();
 	line-height: 59px;
+	line-height: 1.735em;
 	letter-spacing: 1.91px;
+	letter-spacing: 0.056em;
 	color: $colorFive;
 	font-weight: 400;
 	text-transform: none;
