@@ -250,7 +250,7 @@ if($('#o-form').length) {
 							$('.file-select-name').text("Choisir...");
 						}, 500);
 						setTimeout(function() {
-	                          $('.o-form.-activities .c-success').html('asdf');
+	                          $('.o-form.-activities .c-success').html('<h4>Activités</h4>');
 	                          $('.o-form.-contact .c-success').html('dfghdgfh');
 	                          $('.o-form.-career .c-success').html('<h4>Merci</h4><p>Votre demande a été envoyée avec succès. Nous communiquerons avec vous dès que possible</p>');
 	 					}, 500)  
@@ -259,7 +259,7 @@ if($('#o-form').length) {
     });
 
 
-			
+
 	});
 }
 
