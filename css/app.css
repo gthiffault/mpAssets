@@ -2426,21 +2426,27 @@ table {
 li a,
   .c-header_mobile_main_ul
 li .c-parent {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .c-header_nav_mobile .c-header_mobile_main_ul li .c-submenu a {
+    font-size: 16px; } }
 
 @media (min-width: 375px) {
   .c-header_mobile_main_ul
 li a,
   .c-header_mobile_main_ul
 li .c-parent {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .c-header_nav_mobile .c-header_mobile_main_ul li .c-submenu a {
+    font-size: 18px; } }
 
 @media (min-width: 400px) {
   .c-header_mobile_main_ul
 li a,
   .c-header_mobile_main_ul
 li .c-parent {
-    font-size: 20px; } }
+    font-size: 22px; }
+  .c-header_nav_mobile .c-header_mobile_main_ul li .c-submenu a {
+    font-size: 10px; } }
 
 @media (min-width: 480px) {
   .c-header_nav_mobile {
