@@ -524,7 +524,13 @@ var bar = new ProgressBar.Line(progressbar, {
 
 
 
-
+		/* First CSS File */
+		var giftofspeed = document.createElement('link');
+		giftofspeed.rel = 'stylesheet';
+		giftofspeed.href = 'http://staging-painchaud.agencezel.com/assets/css/app.css';
+		giftofspeed.type = 'text/css';
+		var godefer = document.getElementsByTagName('link')[0];
+		godefer.parentNode.insertBefore(giftofspeed, godefer);
 
   WebFontConfig = {
     google: { families: [ 'Montserrat:300,400,500,600|Open+Sans:400,400i,600,700' ] }
