@@ -237,7 +237,7 @@ if($('#o-form').length) {
 		var formData = new FormData(this);
 		
 
-
+if($("#from-email").val() != "" && $("#phone").val() != "" && $("#lname").val() != "" && $("#fname").val() != "" && $("#chooseFile-cv").val() != "") {
 // Send it to the server
     $.post({
         url: '/',
@@ -258,7 +258,7 @@ if($('#o-form').length) {
         		},
     });
 
-
+}
 
 	});
 }
