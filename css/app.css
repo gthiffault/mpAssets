@@ -758,7 +758,10 @@ h5::selection {
   p, a, li {
     font-size: 16px; }
   .js-menu-active {
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0; }
   .c-content_first-column {
     margin-bottom: 96px; } }
 
@@ -776,10 +779,7 @@ h5::selection {
   p, a, li {
     font-size: 17px; }
   .js-menu-active {
-    overflow-y: auto;
-    position: fixed;
-    width: 100%;
-    top: 0; } }
+    overflow-y: auto; } }
 
 @media (min-width: 1280px) {
   p, a, li {

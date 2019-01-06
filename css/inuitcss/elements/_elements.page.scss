@@ -58,6 +58,9 @@ h5::selection { background: transparent; color: $colorZero }
   }
 .js-menu-active {
     overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+    top:0;    
 }
   .c-content_first-column {
     margin-bottom: 96px;  
@@ -86,9 +89,6 @@ h1,h2,h3,h4,h5,h6, a {
   }
 .js-menu-active {
     overflow-y: auto;
-    position: fixed;
-    width: 100%;
-    top:0;
 }
 
 }  
