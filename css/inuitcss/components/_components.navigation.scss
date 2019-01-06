@@ -314,7 +314,8 @@
 
 		.c-header_mobile_main_ul
 		li {
-			a {
+			a,
+			.c-parent {
 				font-size: 17px;
 			}
 		}
@@ -324,7 +325,8 @@
 		@media (min-width:375px) { 
 		.c-header_mobile_main_ul
 		li {
-			a {
+			a,
+			.c-parent {
 				font-size: 20px;
 			}
 		}
@@ -334,7 +336,8 @@
 		@media (min-width:400px) { 
 		.c-header_mobile_main_ul
 		li {
-			a {
+			a,
+			.c-parent {
 				font-size: 20px;
 			}
 		}

@@ -2400,17 +2400,23 @@ table {
   .c-header_nav_mobile {
     top: 72px; }
   .c-header_mobile_main_ul
-li a {
+li a,
+  .c-header_mobile_main_ul
+li .c-parent {
     font-size: 17px; } }
 
 @media (min-width: 375px) {
   .c-header_mobile_main_ul
-li a {
+li a,
+  .c-header_mobile_main_ul
+li .c-parent {
     font-size: 20px; } }
 
 @media (min-width: 400px) {
   .c-header_mobile_main_ul
-li a {
+li a,
+  .c-header_mobile_main_ul
+li .c-parent {
     font-size: 20px; } }
 
 @media (min-width: 480px) {
