@@ -35,7 +35,7 @@
 	a {
 		color: $colorEleven;
 		font-size: 13px;
-		&:before:hover {
+		&:hover:before {
 			color: $colorZero !important;
 		}		
 	}
