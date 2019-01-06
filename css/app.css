@@ -2436,8 +2436,11 @@ li a,
   .c-header_mobile_main_ul
 li .c-parent {
     font-size: 20px; }
-  .c-header_nav_mobile .c-header_mobile_main_ul li .c-submenu a {
-    font-size: 18px; } }
+  .c-header_nav_mobile .c-header_mobile_main_ul li .c-submenu {
+    margin-top: 12px;
+    margin-bottom: 18px; }
+    .c-header_nav_mobile .c-header_mobile_main_ul li .c-submenu a {
+      font-size: 18px; } }
 
 @media (min-width: 400px) {
   .c-header_mobile_main_ul
