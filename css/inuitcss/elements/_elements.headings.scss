@@ -305,6 +305,17 @@ h3 {
 	text-transform: uppercase;
 }
 
+
+c-accordion_clickable h3 {
+	@include h4-title-size();
+	line-height: 49px;
+	line-height: 1.885em;
+	letter-spacing: 1.57px;
+	letter-spacing: 0.060em;
+	font-weight: 400;
+	text-transform: uppercase;	
+}
+
 h4 {
 	@include h4-title-size();
 	line-height: 49px;
