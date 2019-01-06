@@ -1,3 +1,42 @@
+
+
+var bar = new ProgressBar.Line(progressbar, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  from: {color: '#5D5D61'},
+  to: {color: '#00ADBB'},
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+  }
+});
+		bar.animate(1.0);  // Number from 0.0 to 1.0			
+	})		
+
+
+
+
+
+  WebFontConfig = {
+    google: { families: [ 'Montserrat:300,400,500,600|Open+Sans:400,400i,600,700' ] }
+  };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+
+
+
+
 /* ==========================================================================
     VENDOR
 ========================================================================== */
@@ -503,44 +542,3 @@ $('.c-gallery_item').slickLightbox();
 						    zIndex:-9999999999999,
 						    delay:2.5
 						});  
-
-
-var bar = new ProgressBar.Line(progressbar, {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'},
-  from: {color: '#5D5D61'},
-  to: {color: '#00ADBB'},
-  step: (state, bar) => {
-    bar.path.setAttribute('stroke', state.color);
-  }
-});
-		bar.animate(1.0);  // Number from 0.0 to 1.0			
-	})		
-
-
-
-		/* First CSS File */
-		var giftofspeed = document.createElement('link');
-		giftofspeed.rel = 'stylesheet';
-		giftofspeed.href = 'http://staging-painchaud.agencezel.com/assets/css/app.css';
-		giftofspeed.type = 'text/css';
-		var godefer = document.getElementsByTagName('link')[0];
-		godefer.parentNode.insertBefore(giftofspeed, godefer);
-
-  WebFontConfig = {
-    google: { families: [ 'Montserrat:300,400,500,600|Open+Sans:400,400i,600,700' ] }
-  };
-
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
