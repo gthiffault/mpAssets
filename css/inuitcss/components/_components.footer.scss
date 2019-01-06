@@ -32,6 +32,13 @@
 		color: $colorEleven;
 		font-size: 13px;
 	}
+	a {
+		color: $colorSeven;
+		font-size: 16px;
+		&:before:hover; {
+			color: $colorZero;
+		}		
+	}
 }
 
 @media (min-width:320px) { 
