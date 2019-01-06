@@ -36,7 +36,7 @@
 		color: $colorEleven;
 		font-size: 13px;
 		&:before:hover {
-			color: $colorZero;
+			color: $colorZero !important;
 		}		
 	}
 }
