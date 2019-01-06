@@ -514,21 +514,7 @@ $('.c-gallery_item').slickLightbox();
 						});  
 
 
-var bar = new ProgressBar.Line(progressbar, {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'},
-  from: {color: '#5D5D61'},
-  to: {color: '#00ADBB'},
-  step: (state, bar) => {
-    bar.path.setAttribute('stroke', state.color);
-  }
-});
-		bar.animate(1.0);  // Number from 0.0 to 1.0			
+		
 	})		
 
 
