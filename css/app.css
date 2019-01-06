@@ -776,7 +776,9 @@ h5::selection {
   p, a, li {
     font-size: 17px; }
   .js-menu-active {
-    overflow-y: auto; } }
+    overflow-y: auto;
+    position: fixed;
+    width: 100%; } }
 
 @media (min-width: 1280px) {
   p, a, li {
