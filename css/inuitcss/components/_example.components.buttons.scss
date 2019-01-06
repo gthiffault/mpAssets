@@ -159,15 +159,17 @@
 .c-btn_submit {
     background: transparent;
     border: none;
-      color: #FFF;
+    color: #FFF;
     padding: 12px 24px;
-    
-  transition: color 1000ms;    
+    transition: color 1000ms;    
     &:hover {
-      text-decoration: none; /* [4] */
-      color: $colorFour;     
-      cursor: pointer;  
+    text-decoration: none; /* [4] */
+    color: $colorFour;     
+    cursor: pointer;  
     }
+    &:focus {
+    outline: none !important;
+    }    
 }
 
 
