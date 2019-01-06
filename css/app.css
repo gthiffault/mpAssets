@@ -2349,7 +2349,8 @@ table {
     height: 100%;
     padding-top: 40px;
     padding-bottom: 120px;
-    opacity: 1; }
+    opacity: 1;
+    overflow: auto; }
 
 .js-menu-active .c-header_nav_mobile {
   left: 0; }
