@@ -27,9 +27,18 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 p, a, li{
 	font-weight: 300;
   color: $colorFour;
+}
+
+p {
+  width: 100%;
 }
 
 a {
