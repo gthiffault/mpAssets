@@ -522,3 +522,19 @@ var bar = new ProgressBar.Line(progressbar, {
 		bar.animate(1.0);  // Number from 0.0 to 1.0			
 	})		
 
+
+
+
+
+  WebFontConfig = {
+    google: { families: [ 'Montserrat:300,400,500,600|Open+Sans:400,400i,600,700' ] }
+  };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
