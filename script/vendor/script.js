@@ -1,17 +1,3 @@
-
-
-
-		/* First CSS File */
-		var giftofspeed = document.createElement('link');
-		giftofspeed.rel = 'stylesheet';
-		giftofspeed.href = 'http://staging-painchaud.agencezel.com/assets/css/app.css';
-		giftofspeed.type = 'text/css';
-		var godefer = document.getElementsByTagName('link')[0];
-		godefer.parentNode.insertBefore(giftofspeed, godefer);
-
-						$('.c-load-page_animation svg').remove();
-
-
 /* ==========================================================================
     VENDOR
 ========================================================================== */
