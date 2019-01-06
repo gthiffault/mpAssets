@@ -1,3 +1,6 @@
+
+
+
 		/* First CSS File */
 		var giftofspeed = document.createElement('link');
 		giftofspeed.rel = 'stylesheet';
@@ -5,6 +8,8 @@
 		giftofspeed.type = 'text/css';
 		var godefer = document.getElementsByTagName('link')[0];
 		godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+						$('.c-load-page_animation svg').remove();
 
 
 /* ==========================================================================
@@ -491,7 +496,7 @@ var bar = new ProgressBar.Line(progressbar, {
 	svgStyle: {width: '100%', height: '100%'},
 });
 		bar.animate(1.0);  // Number from 0.0 to 1.0
-					
+
 
 					TweenLite.to($('#pageload'), 0.0, {
 					opacity:1,
