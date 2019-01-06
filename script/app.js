@@ -481,6 +481,18 @@ $('.c-gallery_item').slickLightbox();
 			    ================================================================== */
 					$('html,body').animate({scrollTop:0},100);
 
+var bar = new ProgressBar.Line(progressbar, {
+	strokeWidth: 4,
+	easing: 'easeInOut',
+	duration: 1400,
+	color: '#00ADBB',
+	trailColor: '#eee',
+	trailWidth: 1,
+	svgStyle: {width: '100%', height: '100%'},
+});
+		bar.animate(1.0);  // Number from 0.0 to 1.0
+					
+
 					TweenLite.to($('#pageload'), 0.0, {
 					opacity:1,
 					ease: Sine.easeOut, 
@@ -514,7 +526,7 @@ $('.c-gallery_item').slickLightbox();
 						});  
 
 
-		
+			
 	})		
 
 
