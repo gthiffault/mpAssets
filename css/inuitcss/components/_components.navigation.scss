@@ -250,7 +250,6 @@
 		line-height: 40px;
 		a,
 		.c-parent {
-		font-size: 16px;
 		color: $colorFour;			
 		margin-bottom: 0;
 		text-transform: uppercase;
@@ -312,7 +311,37 @@
 		.c-header_nav_mobile {
 		top: 72px;
 		}
+
+		.c-header_mobile_main_ul
+		li {
+			a {
+				font-size: 17px;
+			}
 		}
+
+		}
+
+		@media (min-width:375px) { 
+		.c-header_mobile_main_ul
+		li {
+			a {
+				font-size: 20px;
+			}
+		}
+
+		}
+
+		@media (min-width:400px) { 
+		.c-header_mobile_main_ul
+		li {
+			a {
+				font-size: 20px;
+			}
+		}
+
+		}
+
+
 		@media (min-width:480px) { 
 		.c-header_nav_mobile {
 		top: 82px;

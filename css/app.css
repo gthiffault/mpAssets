@@ -2359,7 +2359,6 @@ table {
   line-height: 40px; }
   .c-header_mobile_main_ul li a,
   .c-header_mobile_main_ul li .c-parent {
-    font-size: 16px;
     color: #5D5D61;
     margin-bottom: 0;
     text-transform: uppercase; }
@@ -2399,7 +2398,20 @@ table {
 
 @media (min-width: 320px) {
   .c-header_nav_mobile {
-    top: 72px; } }
+    top: 72px; }
+  .c-header_mobile_main_ul
+li a {
+    font-size: 17px; } }
+
+@media (min-width: 375px) {
+  .c-header_mobile_main_ul
+li a {
+    font-size: 20px; } }
+
+@media (min-width: 400px) {
+  .c-header_mobile_main_ul
+li a {
+    font-size: 20px; } }
 
 @media (min-width: 480px) {
   .c-header_nav_mobile {
