@@ -207,6 +207,7 @@ $width-007: 64px;
 			@include banner-subtitle-spacing();
 			position: relative;
 			margin-bottom: 3.429em;
+			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 			&:before {
 				@include banner-subtitle_before-spacing();
 				position: absolute;

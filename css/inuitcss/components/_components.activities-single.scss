@@ -7,15 +7,15 @@
 		margin-bottom: 48px;
 	}
 }
-.c-activities_single_info {
+.c-c-block_info {
 	@include mixingTopActivities();
 	transition: all 0.3s linear;
 }
-.c-activities_single_info h4:hover {
+.c-c-block_info h4:hover {
 	cursor: pointer;
 	box-shadow: 4px 4px 7px 0px rgba(190, 190, 190, 0.5);
 }
-.c-activities_single_info_back {
+.c-c-block_info_back {
 	position: relative;
 	max-width: 765px;
 	margin-bottom: 80px;
@@ -42,7 +42,7 @@
 // Media Query
 
 @media (min-width:320px) { 
-	.c-activities_single_info_back {
+	.c-c-block_info_back {
 		h4 {
 		    padding: 10px 0px;
 		    padding-left: 20px;
@@ -54,7 +54,7 @@
 }	
 
 @media (min-width:480px) { 
-	.c-activities_single_info_back {
+	.c-c-block_info_back {
 		h4 {
 		    padding: 10px 0px;
 		    padding-left: 88px;

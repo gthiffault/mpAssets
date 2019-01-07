@@ -424,7 +424,7 @@
 						    left:"-100vw"
 						});  
 
-						TweenLite.to($('.c-load-page'), 0.75, {
+						TweenLite.to($('.c-load-page'), 0.55, {
 						    height: '100%',
 						    width: '100%',
 						    ease: Power4.easeInOut, 
@@ -442,9 +442,9 @@
 						    zIndex:999,
 						});  						
 
-						TweenLite.to($('.c-load-page_animation_logo'), 0.75, {
+						TweenLite.to($('.c-load-page_animation_logo'), 0.55, {
 						    opacity:1,
-							delay:0.5,
+							delay:0.3,
 							 marginLeft:0
 						});  
 
@@ -452,9 +452,9 @@
 						     opacity:0
 						}); 
 
-						TweenLite.to($('#progressbar'), 0.75, {
+						TweenLite.to($('#progressbar'), 0.55, {
 						    opacity:1,
-							delay:0.5,
+							delay:0.3,
 							 marginLeft:0
 						});  						
 
@@ -496,48 +496,47 @@
 			    ================================================================== */
 					$('html,body').animate({scrollTop:0},100);
 
-var bar = new ProgressBar.Line(progressbar, {
-	strokeWidth: 4,
-	easing: 'easeInOut',
-	duration: 1400,
-	color: '#00ADBB',
-	trailColor: '#eee',
-	trailWidth: 1,
-	svgStyle: {width: '100%', height: '100%'},
-});
-		bar.animate(1.0);  // Number from 0.0 to 1.0
+					var bar = new ProgressBar.Line(progressbar, {
+						strokeWidth: 4,
+						easing: 'easeInOut',
+						duration: 300,
+						color: '#00ADBB',
+						trailColor: '#eee',
+						trailWidth: 1,
+						svgStyle: {width: '100%', height: '100%'},
+					});
+					bar.animate(1.0);  // Number from 0.0 to 1.0
 
 
 					TweenLite.to($('#pageload'), 0.0, {
-					opacity:1,
-					ease: Sine.easeOut, 
-					delay: 0, 
-				});   	
-						TweenLite.to($('.c-load-page'), 0.8, {
+						opacity:1,
+						ease: Sine.easeOut, 
+						delay: 0, 
+					});   	
+						TweenLite.to($('.c-load-page'), 0.7, {
 						    height: '100%',
 						    width: '100%',
 						    ease: Power4.easeInOut, 
 						    opacity:1,
 						    left:"100vw",
-						    delay:1.4,
+						    delay:.2,
 						    zIndex:-1
-						    
 						});  
 
 
-						TweenLite.to($('.c-load-page_animation_logo'), .75, {
+						TweenLite.to($('.c-load-page_animation_logo'), .325, {
 						    opacity:0,
-						    delay:1.75
+						    delay:.3
 						});  
 
-						TweenLite.to($('#progressbar'), .75, {
+						TweenLite.to($('#progressbar'), .325, {
 						    opacity:0,
-						    delay:1.5
+						    delay:0.35
 						});  
 
 						TweenLite.to($('.c-load-page_animation'), 0, {
 						    zIndex:-9999999999999,
-						    delay:2.5
+						    delay:1.25
 						});  
 
 

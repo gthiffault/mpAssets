@@ -11,6 +11,7 @@
 		font-size: 20px;
 		margin-bottom: 0;
 		color: $colorNine;
+		font-weight: 500;
 	}
 
 	.c-team_pipe {
@@ -18,5 +19,18 @@
 	}
 	p:last-child {
 		margin-bottom: 0;
+	}
+	.c-team_p {
+		margin-bottom: 80px;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			width: 72px;
+			left: 0;
+			height: 3px;
+			background: $colorZero;
+			bottom: -32px;
+		}
 	}	
 }
