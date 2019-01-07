@@ -225,28 +225,33 @@
 							    e.preventDefault();
 								var formData = new FormData(this);
 								if($("#from-email").val() != "" && $("#phone").val() != "" && $("#lname").val() != "" && $("#fname").val() != "" && $("#chooseFile-cv").val() != "") {
-								// Send it to the server
-								    $.post({
-								        url: '/',
-								        dataType: 'json',
-								        data: $(this).serialize(),
-						    			success: function (data) {
-						    				if($('#o-form').parsley().validate() == true) {
-												setTimeout(function() {
-													$('#o-form').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
-													$('.file-select-name').text("Choisir...");
-												}, 500);
-												setTimeout(function() {
-							                          $('.o-form.-activities .c-success').html('<h4>Activités</h4>');
-							                          $('.o-form.-contact .c-success').html('dfghdgfh');
-							                          $('.o-form.-career .c-success').html('<h4>Merci</h4><p>Votre demande a été envoyée avec succès. Nous communiquerons avec vous dès que possible</p>');
-							 					}, 500)  
-											}
-						        		},
-								    });
-								}
+								$.ajax({
+									url: '/',
+									type: 'POST',
+									dataType: 'json',
+									data: formData,
+									success: function (data) {
+										if($('#o-form').parsley().validate() == true) {
+										setTimeout(function() {
+										$('#o-form').find("input[type=text], textarea, select, input[type=email], input[type=select], input[type=radiobutton],input[type=file] ").val("");
+										$('.file-select-name').text("Choisir...");
+										}, 500);
+										setTimeout(function() {
+										$('.o-form.-activities .c-success').html('<h4>Activités</h4>');
+										$('.o-form.-contact .c-success').html('dfghdgfh');
+										$('.o-form.-career .c-success').html('<h4>Merci</h4><p>Votre demande a été envoyée avec succès. Nous communiquerons avec vous dès que possible</p>');
+										}, 500)   
+										}
+									},
+									cache: false,
+									contentType: false,
+									processData: false	    			
+								});
+							}
 							});
+	
 						}
+						
 
 						if($('#google_map').length) {
 							$.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyDWNOZArXT7_2fbY5A5v9i2NzOo6_3gtio").done(function(script, textStatus) {
