@@ -249,6 +249,7 @@ $width-007: 64px;
 
 	.c-header_banner_subtitle {
 		@include banner-subtitle-size();
+		text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 		font-family: $fontOne;
 		line-height: 36px;
 		line-height: 1.059em;
