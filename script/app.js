@@ -191,7 +191,9 @@
 						    $(function () {
 						        $('#o-form').parsley().on('form:validate', function (formInstance) {
 						            var ok = formInstance.isValid({group: 'block1', force: true}) && formInstance.isValid({group: 'block3', force: true}) && formInstance.isValid({group: 'block2', force: true}) && formInstance.isValid({group: 'email-form', force: true}) && formInstance.isValid({group: 'form-phone', force: true});
-						            $('.invalid-form-error-message').html(ok ? '' : '<p>' + 'Le formulaire ne semble pas correctement rempli. Les erreurs ont été mises en surbrillance plus bas.'  + '</p>').toggleClass('filled', !ok);
+									$('.invalid-form-error-message.-activities').html(ok ? '' : '<p>' + 'Nous n’avons pas pu compléter votre inscription. Veuillez remplir le formulaire à nouveau.'  + '</p>').toggleClass('filled', !ok);
+									$('.invalid-form-error-message.-career').html(ok ? '' : '<p>' + 'Il y a une erreur dans la soumission de votre message. Veuillez remplir le formulaire à nouveau.'  + '</p>').toggleClass('filled', !ok);
+									$('.invalid-form-error-message.-contact').html(ok ? '' : '<p>' + 'Il y a une erreur dans la soumission de votre message. Veuillez remplir le formulaire à nouveau.'  + '</p>').toggleClass('filled', !ok);
 						        });
 						    });
 
@@ -248,9 +250,9 @@
 											$('.file-select-name').text("Choisir...");
 											}, 500);
 											setTimeout(function() {
-											$('.o-form.-activities .c-success').html('<h4>Activités</h4>');
-											$('.o-form.-contact .c-success').html('dfghdgfh');
-											$('.o-form.-career .c-success').html('<h4>Merci</h4><p>Votre demande a été envoyée avec succès. Nous communiquerons avec vous dès que possible</p>');
+											$('.o-form.-activities .c-success').html('<h4 class="c-form_success">Votre inscription à cette activité est confirmée.</h4>');
+											$('.o-form.-contact .c-success').html('<h4 class="c-form_success">Nous avons bien reçu votre message. Nous vous contacterons dans les plus brefs délais.</h4>');
+											$('.o-form.-career .c-success').html('<h4 class="c-form_success">Votre candidature a été soumise avec succès. Nous vous contacterons si votre profil correspond à notre poste.</h4>');
 											}, 500)   
 											}
 										},
