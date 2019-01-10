@@ -232,8 +232,21 @@ $h2_before-title-007: 46px;
 	}						
 }	
 
-
-
+	@media (min-width:320px) { 
+    h2.c-data::after,
+    h1.c-page_title::after{
+		display:none;
+	
+}
+	}
+	
+	@media (min-width:840px) { 
+    h2.c-data::after,
+    h1.c-page_title::after {
+		display:block;
+	}}
+	
+	
 .c-header_banner h1,
 .c-section_title {
 	font-family: $fontOne;

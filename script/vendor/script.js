@@ -109,19 +109,21 @@
 							slidesToScroll: 4,
 							autoplay: true,
 							autoplaySpeed: 2000,
-							dots: true,
+
 							appendDots:'.c-parners_dots',
 							responsive: [
 							    {
 									breakpoint: 9999999,
 									settings: {
 										slidesToShow: 5,
+										slidesToScroll: 5,
 									}
 							    },
 							    {
 							      	breakpoint: 1280,
 							      	settings: {
 							        	slidesToShow: 4,
+							        	slidesToScroll: 4,
 							      	}
 							    },
 							    {
@@ -129,6 +131,7 @@
 							      	settings: {
 							        	slidesToShow: 3,
 							        	slidesToScroll: 3,
+							        	dots: true,
 							      	},
 							    },      
 							    {
@@ -136,6 +139,7 @@
 							      	settings: {
 							        	slidesToShow: 2,
 							          	slidesToScroll: 2,
+							          	dots:false
 							      	}      
 							    },
 							    {
