@@ -36,7 +36,12 @@
 }	
 
 .c-img-txt {
-	@include mixingBottom();
+	@media (min-width:20.000em) { 
+		margin-bottom: 80px;
+	}
+	@media (min-width:52.500em) { 
+		margin-bottom: 84px;
+	}	
 	h2 {
 		max-width: 600px;
 		&:after {
